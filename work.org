@@ -16,9 +16,9 @@ This shall be changed to be updated whenever jobs are updated
 *** Test
 
 **
-** INPROGRESS ma25@add cateory to report CSV                          :WORK:
+** DONE [#A] ma25@add cateory to report CSV                           :WORK:
 DEADLINE: <2014-08-11 Mon>
-** TODO Fix Failed test cases [1/3]
+** TODO [#B] Fix Failed test cases [1/3]
 - [X] Fix RailsFactory
 
 - [ ] Server Rspec [0/2]
@@ -26,12 +26,16 @@ DEADLINE: <2014-08-11 Mon>
   - [ ] Controller
 
 - [ ] Client [0/3]
-  - [ ] Deriective
+  - [ ] Directive
   - [ ] Service
   - [ ] Controller
 
-** TODO Setup Vagrant Dev env
+** TODO [#C] Setup Vagrant Dev env
 - [ ] Fix Rails Server by using POW like RACK service
-** TODO ask Paul about `dealership` table
+** TODO [#B] ask Paul about `dealership` table
 SCHEDULED: <2014-08-11 Mon>
 *** Description: Paul deleted `client` from Dealership Table but still some logic related to it left
+** TODO ma-24@Crop marked pdf needs to include registration marks as well. :WORK:
+DEADLINE: <2014-08-11 Mon>
+*** TODO Ask James to understand this concept
+SCHEDULED: <2014-08-11 Mon>
