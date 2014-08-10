@@ -1,7 +1,4 @@
-* TODO Project Add bundle feature into myadbox                         :WORK:
-** INPROGRESS task 1.
-** TODO task 2.
-** TODO task 3.
-** TODO task 4.
-** TODO task 5.
-** TODO task 6.
+* Unsorted
+** INPROGRESS Learn GoLang [1/2]
+- [ ] Read Go Concurrency Pattern
+- [X] Do tutorial at golang.org
