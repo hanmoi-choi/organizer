@@ -1,0 +1,59 @@
+#    -*- mode: org -*-
+Archived entries from file /Users/daniel/Dropbox/org/work.org
+
+
+* Archived Tasks
+
+** DONE ma14@add feature to sort columns at traffic page              :WORK:
+DEADLINE: <2014-08-08 Fri>* Unsorted
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-10 Sun 22:05
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+
+** DONE ma15@realtime update with jobs                                :WORK:
+DEADLINE: <2014-08-11 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-10 Sun 22:05
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+*** Understand Code [3/3]
+- [X] AdProofsController.
+- [X] DocumentContoller using Pusher in Client
+- [X] How to use Pusher Gem ; Pusher.trigger(channels, e_name, data)
+
+*** Descritpion
+At the moment jobs page is updated whenever being visited.
+This shall be changed to be updated whenever jobs are updated
+
+*** Test
+
+**
+
+** DONE [#A] ma25@add cateory to report CSV                           :WORK:
+DEADLINE: <2014-08-11 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-10 Sun 22:05
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+
+** DONE [#B] ask Paul about `dealership` table
+SCHEDULED: <2014-08-11 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-11 Mon 15:26
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+*** Description: Paul deleted `client` from Dealership table but there are still some logic related
+*** James is fixing this issue.
