@@ -1,21 +1,29 @@
 * Work
-** PENDING [MA-24] Crop marked pdf needs to include registration marks as well. :WORK:
+** INPROGRESS [#C] [MA-23] As Darebin I would like to customise the language used in myadbox [0/4]
+[[http://media.railscasts.com/assets/episodes/videos/256-i18n-backends.mp4][Watch this railcast]]
+DEADLINE: <2014-08-15 Fri>
+- [ ] Check i18n::backend GEM
+- [ ] Write Server logic and tests
+- [ ] Get ui template from `Cam`
+- [ ] Client codes and test if possible
+
+** PENDING [#A] [MYAD-2] In Darebin need to check that emails are being generated for approvals [7/8]
+DEADLINE: <2014-08-13 Wed>
+- [X] Create a `communication_approver` role
+- [X] Add `communication_approvals`, `write`, `all` permission to that role.
+- [X] Add a after method to finish to send approval email : NotificationMailer.document_to_approve
+- [X] Add new NotificationMailer method to send "Document for approval"
+  email. (Only send to communication approvers)
+- [X] Add rspec codes for testing as well
+- [X] Test manually
+- [X] Modify Query statement only for client and role
+- [ ] Modify Email template
+** TODO [#C] [MA-24] Crop marked pdf needs to include registration marks as well. :WORK:
 DEADLINE: <2014-08-11 Mon>
 *** TODO Ask James to understand this concept
 SCHEDULED: <2014-08-11 Mon>
-** INPROGRESS [#A] Fix Failed test cases [1/3]
-*** DONE Fix RailsFactory
 
-*** TODO Server Rspec [3/4]
-DEADLINE: <2014-08-12 Tue>
-- [X] Model
-- [X] Controller
-- [X] Fix rails bugs
-- [ ] Fix CI Server Rspec Gems dependencies
 
-** TODO [#A] [MYAD-2] In Darebin need to check that emails are being generated for approvals
-DEADLINE: <2014-08-13 Wed>
-** TODO [#C] [MA-23] As Darebin I would like to customise the language used in myadbox
 
 ** TODO [#C] Setup Vagrant Dev env [2/5]
 - [ ] Setup private network
@@ -23,5 +31,12 @@ DEADLINE: <2014-08-13 Wed>
 - [ ] Fix Rails Server by using POW like RACK service
 - [X] Create repo in bitbucket
 - [X] Setup puppet configuration with vagrant
+  NOTE : 0.0.0.0:3000 will fail with @brand.id since it is checking with
+  subdomain name like 'audi'
+
 ** TODO [#A] Check property `second_steps` in `client` table          :WORK:
 SCHEDULED: <2014-08-12 Tue>
+** TODO [#A] Add more rspec tests for missing classes [0/2]            :WORK:
+DEADLINE: <2014-08-24 Sun>
+- [ ] Controllers
+- [ ] Models

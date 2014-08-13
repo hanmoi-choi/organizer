@@ -57,3 +57,20 @@ SCHEDULED: <2014-08-11 Mon>
 :END:
 *** Description: Paul deleted `client` from Dealership table but there are still some logic related
 *** James is fixing this issue.
+
+** DONE [#A] Fix Failed test cases [2/2]
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-13 Wed 12:10
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+*** DONE Fix RailsFactory
+
+*** DONE Server Rspec [4/4]
+DEADLINE: <2014-08-12 Tue>
+- [X] Model
+- [X] Controller
+- [X] Fix rails bugs
+- [X] Fix CI Server Rspec Gems dependencies
