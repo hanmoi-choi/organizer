@@ -63,8 +63,10 @@ DEADLINE: <2014-08-24 Sun>
   - [ ]
   - [ ]
 
-** TODO [MA-36] Integration test in Bamboo CI [/]                      :WORK:
+** TODO [MA-36] Integration test in Bamboo CI [3/5]                    :WORK:
 DEADLINE: <2014-08-17 Sun>
-- [ ] Look into Capybara Gem which is ruby selenium
-- [ ] Setup linux 'POW' CI Server
-- [ ] List out the test cases for end-to-end testing
+- [X] Look into Capybara Gem which is ruby selenium
+- [X] Setup phantom js
+- [X] Write test to login to see if it's working
+- [ ] Setup vagrant to access with url 'audi.myadbox.dev'
+- [ ] Find linux 'POW' substitute
