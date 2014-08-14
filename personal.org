@@ -1,3 +1,5 @@
 * Personal
 ** DONE Send Bank Account to Russ                                 :PERSONAL:
 DEADLINE: <2014-08-11 Mon>
+** TODO Bible Study with Richard                                   :PERSONAL:
+SCHEDULED: <2014-08-14 Thu>

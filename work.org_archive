@@ -74,3 +74,13 @@ DEADLINE: <2014-08-12 Tue>
 - [X] Controller
 - [X] Fix rails bugs
 - [X] Fix CI Server Rspec Gems dependencies
+
+** DONE [#A] Check property `second_steps` in `client` table          :WORK:
+SCHEDULED: <2014-08-12 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-13 Wed 12:14
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
