@@ -1,5 +1,5 @@
 * Work
-** INPROGRESS [#B] [MA-23] As Darebin I would like to customise the language used in myadbox [3/6] :WORK:
+** PENDING [#B] [MA-23] As Darebin I would like to customise the language used in myadbox [3/6] :WORK:
 DEADLINE: <2014-08-20 Wed>
 - [X] [[http://media.railscasts.com/assets/episodes/videos/256-i18n-backends.mp4][Watch this railcast]]
 - [X] Check i18n::backend GEM
@@ -23,15 +23,17 @@ DEADLINE: <2014-08-18 Mon>
 ** TODO [#C] [MA-24] Crop marked pdf needs to include registration marks as well. :WORK:
 *** Ask James to understand this concept
 
-
-** TODO [#C] Setup Vagrant Dev env [2/5]
-- [ ] Setup private network
-- [ ] configure port forwarding for services
-- [ ] Fix Rails Server by using POW like RACK service
+** TODO [#C] Setup Vagrant Dev env [4/7]
+- [X] Setup private network
+- [X] configure port forwarding for services
 - [X] Create repo in bitbucket
 - [X] Setup puppet configuration with vagrant
   NOTE : 0.0.0.0:3000 will fail with @brand.id since it is checking with
   subdomain name like 'audi'
+  ; Fixed with using dnsmasq like audi.myadbox.dev:3000 -> 127.0.0.1:3000
+- [ ] Fix Bugs; mysql setting
+- [ ] PhantomJS
+- [ ] Guard Setting
 
 ** TODO [#A] Add more rspec tests for missing classes [0/2]            :WORK:
 DEADLINE: <2014-08-24 Sun>
@@ -63,10 +65,16 @@ DEADLINE: <2014-08-24 Sun>
   - [ ]
   - [ ]
 
-** TODO [MA-36] Integration test in Bamboo CI [3/5]                    :WORK:
+** INPROGRESS [MA-36] Integration test in Bamboo CI [5/6]              :WORK:
 DEADLINE: <2014-08-17 Sun>
 - [X] Look into Capybara Gem which is ruby selenium
 - [X] Setup phantom js
 - [X] Write test to login to see if it's working
-- [ ] Setup vagrant to access with url 'audi.myadbox.dev'
-- [ ] Find linux 'POW' substitute
+- [X] Setup vagrant to access with url 'audi.myadbox.dev'
+- [X] Testing with Bamboo server
+- [ ] Send notification via Slack
+** INPROGRESS [MYAD-11] As I dealer I would like to upload an asset into an ad [3/4] :WORK:
+- [X] Check upload tag from xml
+- [X] Add button if upload value is true
+- [X] Show upload field ui when button is clicked
+- [ ] Add exception cases - while uploading a file; hide `X`
