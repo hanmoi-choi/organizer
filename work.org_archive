@@ -84,3 +84,76 @@ SCHEDULED: <2014-08-12 Tue>
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
+
+** DONE [MA-36] Integration test in Bamboo CI [6/6]                   :WORK:
+DEADLINE: <2014-08-17 Sun>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-21 Thu 09:43
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Look into Capybara Gem which is ruby selenium
+- [X] Setup phantom js
+- [X] Write test to login to see if it's working
+- [X] Setup vagrant to access with url 'audi.myadbox.dev'
+- [X] Testing with Bamboo server
+- [X] Send notification via Slack
+
+** DONE [MYAD-11] As I dealer I would like to upload an asset into an ad [5/5] :WORK:
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-22 Fri 11:08
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Check upload tag from xml
+- [X] Add button if upload value is true
+- [X] Show upload field ui when button is clicked
+- [X] Add exception cases - while uploading a file; hide `X`
+- [X] Refactoring as Paul commented
+
+** DONE [MA-38] Improve asset selector                                :WORK:
+DEADLINE: <2014-08-25 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-26 Tue 11:41
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+Description : After cropping a image, that edited image shall be displayed in
+preview in editing mode.
+
+** DONE [MYAD-50] Custom note on an ad [2/2]                          :WORK:
+DEADLINE: <2014-08-27 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-27 Wed 14:07
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] fix CSS bugs
+- [X] verify UX, editable all the time?
+
+** DONE [#A] [MYAD-2] In Darebin need to check that emails are being generated for approvals [9/9] :WORK:
+DEADLINE: <2014-08-27 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-08-27 Wed 17:41
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Create a `communication_approver` role
+- [X] Add `communication_approvals`, `write`, `all` permission to that role.
+- [X] Add a after method to finish to send approval email : NotificationMailer.document_to_approve
+- [X] Add new NotificationMailer method to send "Document for approval" email. (Only send to communication approvers)
+- [X] Add rspec codes for testing as well
+- [X] Test manually
+- [X] Modify Query statement only for client and role
+- [X] Modify Email template
+- [X] Modify logo image file and css
