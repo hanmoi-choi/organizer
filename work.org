@@ -49,3 +49,8 @@ DEADLINE: <2014-09-07 Sun>
   - [ ]
   - [ ]
   - [ ]
+** DONE [MYAD-140] Add pagination in ad table [3/3]                   :WORK:
+DEADLINE: <2014-09-09 Tue>
+- [X] Create directive for pagination
+- [X] Do refactoring with directive for pagination
+- [X] Add pagination in /ads page
