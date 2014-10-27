@@ -157,3 +157,91 @@ DEADLINE: <2014-08-27 Wed>
 - [X] Modify Query statement only for client and role
 - [X] Modify Email template
 - [X] Modify logo image file and css
+
+** DONE [MYAD-140] Add pagination in ad table [3/3]                   :WORK:
+DEADLINE: <2014-09-09 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-09 Tue 13:53
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Create directive for pagination
+- [X] Do refactoring with directive for pagination
+- [X] Add pagination in /ads page
+
+** DONE [MYAD-150] Show `uploaded at` next to a template asset file [2/2] :WORK:
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-10 Wed 12:19
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] add fields in DB to store preview_image and asset's updated data
+- [X] add logic to display them in client
+
+** DONE [MYAD-150] Price Field in Template [2/2]                      :WORK:
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-12 Fri 12:07
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] format in currency
+- [X] allow only number
+
+** DONE [MYAD-183] Scheduled AdRequest Deletion [3/3]                 :WORK:
+DEADLINE: <2014-09-15 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-15 Mon 17:33
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] add checked_to_delete column
+  type is boolean
+- [X] modify `destroy method` to check the field rather than deleting
+- [X] Add rake task to delete all rows where the field, `checked_to_delete` is true
+
+** DONE [MYAD-200] Registering a user [5/5]                           :WORK:
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-22 Mon 10:12
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Registering page
+- [X] Registering controller
+- [X] Sending email to a user whose role is user_approval
+- [X] Approval page
+- [X] Use `https` because of password
+
+** DONE [MYAD-184] Multiple dates in new builder [2/2]                :WORK:
+DEADLINE: <2014-09-17 Wed>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-22 Mon 10:12
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+Sanjei is working on CSS
+- [X] create `multidate-picker` directive
+- [X] replace `exiting one` with the newer directive
+
+** DONE [MYAD-169] Make links in metadata clickable [2/2]             :WORK:
+DEADLINE: <2014-09-22 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-09-22 Mon 13:52
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] switch b/w label and textbox with edit button
+- [X] in case text is for url, make it clickable
