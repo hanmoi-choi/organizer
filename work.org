@@ -1,56 +1,13 @@
 * Work
-** PENDING [#B] [MA-23] As Darebin I would like to customise the language used in myadbox [3/6] :WORK:
-DEADLINE: <2014-08-20 Wed>
-- [X] [[http://media.railscasts.com/assets/episodes/videos/256-i18n-backends.mp4][Watch this railcast]]
-- [X] Check i18n::backend GEM
-- [X] Write Server logic and tests to check i18n::backend is working
-- [ ] write controller to handle ui request to save user specific translation
-- [ ] Get ui template from `Cam`
-- [ ] Client codes and test if possible
+** PENDING Custom Ad [0/2]                                            :WORK:
+DEADLINE: <2014-12-15 Mon>
+- Note taken on [2014-12-15 Mon 09:28] \\
+  Adding rich text is not that easy
+- [ ] RichText in Brief ?; Shall need to talk to Paul
+- [ ] New builder shall support the same feature [0/2]
+  - [ ] Due directive
+  - [ ] Budget directive
 
-** TODO [#C] Setup Vagrant Dev env [4/7]
-- [X] Setup private network
-- [X] configure port forwarding for services
-- [X] Create repo in bitbucket
-- [X] Setup puppet configuration with vagrant
-  NOTE : 0.0.0.0:3000 will fail with @brand.id since it is checking with
-  subdomain name like 'audi'
-  ; Fixed with using dnsmasq like audi.myadbox.dev:3000 -> 127.0.0.1:3000
-- [ ] Fix Bugs; mysql setting
-- [ ] PhantomJS
-- [ ] Guard Setting
-
-** TODO [#A] Add more rspec tests for missing classes [0/2]            :WORK:
-DEADLINE: <2014-09-07 Sun>
-- [ ] Controllers [0/12]
-  - [ ] User
-  - [ ] AdRequest
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-  - [ ] ??
-
-- [ ] Models [0/12]
-  - [ ] ??
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-  - [ ]
-** DONE Check with workflow [2/2]                                     :WORK:
-- [X] workflow.rb ; EDM type
-- [X] document_controller.coffee
-
-** DONE Yearly-view in Planner                                        :WORK:
+** INPROGRESS Planner-YearView [0/1]                                   :WORK:
+DEADLINE: <2014-12-15 Mon>
+- [ ] Add year view

@@ -1,4 +1,4 @@
 * Unsorted
 ** INPROGRESS [#C] Learn GoLang [1/2]
 - [ ] Read Go Concurrency Pattern
-- [X] Do tutorial at golang.org
+:- [X] Do tutorial at golang.org
