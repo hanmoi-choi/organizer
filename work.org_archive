@@ -291,3 +291,41 @@ DEADLINE: <2014-09-22 Mon>
 - [X] FIX BUG - calculating the number of publication
 - [X] Filtering with ad_type
 - [X] Filtering with Category
+
+** DONE Planner-YearView [1/1]                                        :WORK:
+DEADLINE: <2014-12-15 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-12-16 Tue 18:14
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- [X] Add year view
+
+** DONE Custom Ad [3/3]                                               :WORK:
+DEADLINE: <2014-12-15 Mon>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-12-29 Mon 10:31
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+- Note taken on [2014-12-15 Mon 09:28] \\
+  Adding rich text is not that easy
+- [X] Add logic validate budget optionally in Old builder
+- [X] RichText in Brief ?; Shall need to talk to Paul
+- [X] New builder shall support the same feature [2/2]
+  - [X] Due directive
+  - [X] Budget directive
+
+** DONE Year View Fix Bug                                             :WORK:
+DEADLINE: <2014-12-16 Tue>
+:PROPERTIES:
+:ARCHIVE_TIME: 2014-12-29 Mon 10:31
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:

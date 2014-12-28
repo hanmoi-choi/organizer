@@ -1,13 +1,5 @@
 * Work
-** PENDING Custom Ad [0/2]                                            :WORK:
-DEADLINE: <2014-12-15 Mon>
-- Note taken on [2014-12-15 Mon 09:28] \\
-  Adding rich text is not that easy
-- [ ] RichText in Brief ?; Shall need to talk to Paul
-- [ ] New builder shall support the same feature [0/2]
-  - [ ] Due directive
-  - [ ] Budget directive
-
-** INPROGRESS Planner-YearView [0/1]                                   :WORK:
-DEADLINE: <2014-12-15 Mon>
-- [ ] Add year view
+** TODO Managing dealership [0/2]                                      :WORK:
+DEADLINE: <2014-12-31 Wed>
+- [ ] get admin user info and display
+- [ ] get dealers and display in table
