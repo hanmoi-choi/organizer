@@ -1,9 +1,0 @@
-* Personal
-** DONE Send Bank Account to Russ                                 :PERSONAL:
-DEADLINE: <2014-08-11 Mon>
-** TODO Operator Spike [0/5]                                       :PERSONAL:
-- [ ] setup project with clojure
-- [ ] design concept
-- [ ] select framework and libs
-- [ ] learning transducers / components
-- [ ]

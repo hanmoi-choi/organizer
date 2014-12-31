@@ -1,5 +1,9 @@
-* Work
-** TODO Managing dealership [0/2]                                      :WORK:
+* Myadbox Tasks
+** INPROGRESS [#A] Managing dealership [2/4]                         :@work:
 DEADLINE: <2014-12-31 Wed>
-- [ ] get admin user info and display
-- [ ] get dealers and display in table
+- Note taken on [2014-12-29 Mon 14:05] \\
+  Need talk with @Paul about Permission and `Edit` actions
+- [X] get admin user info and display
+- [X] get dealers and display in table
+- [ ] Use Role instead of Permission
+- [ ] Edit a user modal Pop-up
