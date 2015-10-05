@@ -1,0 +1,39 @@
+
+#+begin_src ditaa :file how_to_render_view.png :cmdline -r
+
+
+                                                              +-----------------+
+           o def find_all(name, prefix, partial, details,     |ActionView       | o ActionView_Template.new(source, identifier, handler, details)
+                          cache_key, locals)                  |Resolver         |   o source=body
+             o name: action                                   |                 |   o identifier=unique_id
+             o prefix: controller                             |find_all()       |   o handler=Object registered_template_handler(:type)
+                                                              |find_template()  | o append_view_path SqlTemplate_Resolver.new
+                                                              +-----------------+
+                                                                   ^         |
+                                                    find template  |         | return template
+                                                                   |         V
+                                                              +--------------------+
+           o holding all view path containing view collection |ActionView          |
+           o by default 'app/views' filesystem                |LookupContext       |
+           o append_view_path() in order to add view path     |                    |
+                                                              |lookup_context()    |
+                                                              +--------------------+
+                                                                   ^         |
+                                                    find template  |         | return template
+                                                                   |         V
+      +----------+ render() +----------------------+          +----------------+ compile template  +----------------+
+Req-->|          |--------->|AbstractController    |--------> |ActionView      |-----------------> |ActionView      |
+      |Controller|          |Rendering             |          |Renderer        |                   |Template        |
+      |          |          |normalizing options   |          |                |<----------------- |Handlers        |
+      +----------+          |                      |          |view_renderer() | compiled template |handler         |
+                            +----------------------+          +----------------+                   +----------------+
+                              o To add format                                                o compile template to Ruby code
+                                ActionController                                             o ActionView_Template.register_template_handler()
+                                Renderers.add()
+
+
+
+#+end_src
+
+#+RESULTS:
+[[file:how_to_render_view.png]]

@@ -1,9 +1,23 @@
-* Myadbox Tasks
-** INPROGRESS [#A] Managing dealership [2/4]                         :@work:
-DEADLINE: <2014-12-31 Wed>
-- Note taken on [2014-12-29 Mon 14:05] \\
-  Need talk with @Paul about Permission and `Edit` actions
-- [X] get admin user info and display
-- [X] get dealers and display in table
-- [ ] Use Role instead of Permission
-- [ ] Edit a user modal Pop-up
+* Work Tasks
+* DONE NFSNZRPOS-475                                           :@work::Steve:
+CLOSED: [2015-10-05 Mon 12:47]
+Need to get ~production codes~ from Nissan
+At the moment, NFSNZ finance product's default codes are diffrent from files' name
+Use code in fm_admin
+
+* WAITING NFSNZRPOS-466 ::@Steve::
+[[https://jira.ibsglobalweb.com/browse/NFSNZRPOS-466][#NFSNZRPOS-466 In Test Origination Business Lease App 32582/Financial Details tab, Payment Structure is shown as "Regular Payments" eventhough "Distinct first rental in advance" is selected in Finance Product config. - IBS Issue Management]]
+Need to migrate
+Payment structure has been changed from simple values('structure' and 'regular') to multiple ones('adA')
+
+* STARTED NFSNZRPOS-472                                            ::@Steve::
+There should be a patch in ~fm_admin~ and @Steve is going to handle it
+[[file:repo_todo.org::*Missing%20paramemter%20<2015-10-05%20Mon%2010:10>][Missing paramemter      <2015-10-05 Mon 10:10>]]
+@Michael said that this ui shoul not be show
+Check with @Sushma
+
+* WAITING NFSNZRPOS-470 ::@Steve::
+Need @Steve's feedback & migration codes
+
+* WAITING NFSNZR-1006 ::@Steve::
+Need @Steve's migration codes

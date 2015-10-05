@@ -1,0 +1,170 @@
+#    -*- mode: org -*-
+
+
+Archived entries from file /Users/danielc/Dropbox/org/organizer.org
+
+
+* DONE Download Let's Code JS                                     :@personal:
+CLOSED: [2015-07-19 Sun 19:10] SCHEDULED: <2015-07-17 Fri>
+:PROPERTIES:
+:Effort: 2day
+:ARCHIVE_TIME: 2015-07-19 Sun 19:11
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+Download from this site [[http://www.letscodejavascript.com/][Let's code JS]]
+
+* STARTED Finding new house to move in                                :@home:
+SCHEDULED: <2015-08-20 Thu>
+:PROPERTIES:
+:Effort: 2day
+:ARCHIVE_TIME: 2015-07-26 Sun 15:27
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: STARTED
+:END:
+Use these sites [[http://www.realestate.com.au/rent][realestate]]
+
+* DONE Preparing Amazon                                           :@personal:
+CLOSED: [2015-07-26 Sun 15:27] SCHEDULED: <2015-07-20 Mon>
+:PROPERTIES:
+:Effort: 2months
+:ARCHIVE_TIME: 2015-07-26 Sun 15:27
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Lodge Tax                                                      :@home:
+CLOSED: [2015-07-20 Mon 15:32] SCHEDULED: <2015-07-19 Sun>
+:PROPERTIES:
+:Effort: 0:30
+:ARCHIVE_TIME: 2015-07-26 Sun 15:27
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Check final payment form Myadbox                           :@personal:
+CLOSED: [2015-07-26 Sun 15:27] SCHEDULED: <2015-07-20 Mon>
+:PROPERTIES:
+:Effort: 0:30
+:ARCHIVE_TIME: 2015-07-26 Sun 15:27
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+Check payment and if not paid, sent email to Paul
+
+* Quick Tasks
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-07-26 Sun 15:31
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_CATEGORY: ???
+:END:
+** TODO Wishlist [0/2]                                            :@personal:
+- [ ] Noise Cancelling Headphone for my birthday present
+- [ ]
+-
+
+* STARTED Wishlist [0/2]                                          :@personal:
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-07-26 Sun 15:59
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Quick Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: STARTED
+:END:
+- [ ] Noise Cancelling Headphone for my birthday present
+- [ ]
+-
+
+* DONE Emacs customize                                            :@personal:
+CLOSED: [2015-08-09 Sun 22:01] SCHEDULED: <2015-08-08 Sat>
+:PROPERTIES:
+:Effort: 2day
+:ARCHIVE_TIME: 2015-08-09 Sun 22:01
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+1. [X] I don't like fixed indent
+2. [X] Font lock for ~TODO, FIXME~
+3. [ ]
+
+* DONE Pickup Keys
+CLOSED: [2015-08-24 Mon 16:18]
+  :PROPERTIES:
+  :LINK: [[https://www.google.com/calendar/event?eid=XzZ0Mmo4Y3BnNzUzMzRiOWw4OHAzMGI5azc0cWo2YmEyNmdvajhiYTM4Y3FrYWdobzZzcTNhZTlpNjAgdTdmZWc5NnRqN3JmMnBkN2VrcXQ3YTd1OGNAZw][Go to gcal web page]]
+  :ID: _6t2j8cpg75334b9l88p30b9k74qj6ba26goj8ba38cqkagho6sq3ae9i60
+  :ARCHIVE_TIME: 2015-08-24 Mon 20:37
+  :ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+  :ARCHIVE_CATEGORY: organizer
+  :ARCHIVE_TODO: DONE
+  :END:
+
+  <2015-08-21 Fri 17:00-17:30>
+
+Come office earlier
+
+* DONE Move in
+CLOSED: [2015-08-24 Mon 16:18]
+  :PROPERTIES:
+  :ARCHIVE_TIME: 2015-08-24 Mon 20:38
+  :ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+  :ARCHIVE_CATEGORY: organizer
+  :ARCHIVE_TODO: DONE
+  :END:
+:LINK:     [[https://www.google.com/calendar/event?eid=XzYwcmphaDlnNjhvM2liOW44Y3FqOGI5azhncTNpYjlvNjhvM2ViOW82ZDEzOGhpNDZkMWo2Z3E1NmsgdTdmZWc5NnRqN3JmMnBkN2VrcXQ3YTd1OGNAZw][Go to gcal web page]]
+  :ID: _60rjah9g68o3ib9n8cqj8b9k8gq3ib9o68o3eb9o6d138hi46d1j6gq56k
+  :END:h
+
+  <2015-08-22 Sat 09:00-10:00>
+
+* DONE Pick up stuff
+CLOSED: [2015-08-24 Mon 16:17]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-08-24 Mon 20:38
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE mu4e working with w3m and org-mode
+CLOSED: [2015-09-22 Tue 15:06]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-09-22 Tue 23:40
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Purchase Melbourne Show and Aquarium ticket
+CLOSED: [2015-09-22 Tue 15:06]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-09-22 Tue 23:40
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Fix Bugs occurred while merging new master code              :@coding:
+CLOSED: [2015-09-29 Tue 14:19] SCHEDULED: <2015-09-29 Tue>
+:LOGBOOK:
+CLOCK: [2015-09-29 Tue 09:21]
+:END:
+:PROPERTIES:
+:Effort: 2:00
+:ARCHIVE_TIME: 2015-09-30 Wed 23:38
+:ARCHIVE_FILE: ~/Dropbox/org/organizer.org
+:ARCHIVE_OLPATH: Tasks
+:ARCHIVE_CATEGORY: organizer
+:ARCHIVE_TODO: DONE
+:END:

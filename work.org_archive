@@ -1,345 +1,303 @@
 #    -*- mode: org -*-
-Archived entries from file /Users/daniel/Dropbox/org/work.org
 
 
-* Archived Tasks
+Archived entries from file /Users/danielc/Dropbox/org/work.org
 
-** DONE ma14@add feature to sort columns at traffic page              :WORK:
-DEADLINE: <2014-08-08 Fri>* Unsorted
+
+* DONE Complete Application Page [6/6]                                :@work:
+CLOSED: [2015-08-07 Fri 09:29] SCHEDULED: <2015-08-05 Wed>
+:LOGBOOK:
+CLOCK: [2015-08-05 Wed 09:33]--[2015-08-05 Wed 09:58] =>  0:25
+:END:
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-08-10 Sun 22:05
+:Effort: 2day
+:ARCHIVE_TIME: 2015-08-07 Fri 09:29
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
+:ARCHIVE_OLPATH: FM-INSURANCE
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+1. [X] Validate with ~Convert to Business~ [3/3]
+   1. [X] Prelimanary Page: Vehicle, at least one
+   2. [X] Insurance Quote: active quote, at least one
+   3. [X] Customer & History:
+      - [X] Main Driver
+      - [X] Policy Holder
+      - [X] Vehicle Usage 100%
+      - [X] All history answers are checked
+        - [X] If ~Yes~ is checked, at least one detailed answer should be existed
+2. [X] Remove Credit Card Option
+3. [X] Reorder page layout since ~Payment Details~ should be seperated form.
+4. [X] Additional Fields for ~Bank Account~ option
+   1. [X] BSB
+   2. [X] Account #
+   3. [X] Account Holder Name
+5. [X] JS Validation
+   1. [X] New Business
+   2. [X] Payment Details
+6. [X] Complete Application
+   1. [X] Validate first tab
+   2. [X] Validate 2nd tab
+   3. [X] Validate 3rd tab
+   4. [X] validate comprehensive_quote_pending, if true, false
+   5. [X] validate gap_quote_pending, if true, false
+   6. [X] validate cci_quote_pending, if true, false
+
+* DONE Finalize Insurance Demo Codes [6/6]                          :@coding:
+CLOSED: [2015-08-10 Mon 13:23] SCHEDULED: <2015-08-07 Fri>
+:LOGBOOK:
+CLOCK: [2015-08-07 Fri 09:33]--[2015-08-07 Fri 09:58] =>  0:25
+:END:
+:PROPERTIES:
+:Effort: 1day
+:ARCHIVE_TIME: 2015-08-10 Mon 17:49
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+1. [X] Underwrting refer to; need to persist the request data in DB
+   1. [X] Create Model
+   2. [X] Add JS validation
+   3. [X] Save data
+2. [X] Convert To Business
+   1. [X] Add more rspecs; success cases
+   2. [X] When success display flash message
+3. [X] Edit Customer
+4. [X] Fix strings, ~Comprehensive Policy~
+5. [X] Display quote information always
+6. [X] Add cancel button on edting customer
+
+* DONE Fix bug with Communication B/W Originatioin and Insurance [/] :@coding:
+CLOSED: [2015-08-14 Fri 10:57] SCHEDULED: <2015-08-13 Thu>
+:LOGBOOK:
+CLOCK: [2015-08-12 Wed 16:46]--[2015-09-11 Fri 13:37] => 716:51
+:END:
+:PROPERTIES:
+:Effort: 1day
+:ARCHIVE_TIME: 2015-08-14 Fri 10:57
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: FM-INSURANCE
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: @work
+:END:
+
+* DONE Fix UI bugs [3/3]                                            :@coding:
+CLOSED: [2015-08-14 Fri 15:44] SCHEDULED: <2015-08-14 Fri>
+:PROPERTIES:
+:Effort: 1day
+:ARCHIVE_TIME: 2015-08-14 Fri 15:44
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+1. [X] Use DateSelect for Date Type
+2. [X] Tab2's error notification should use Foundation way
+3. [X] IE9's UI compatibility
+
+* Payment Day
+  :PROPERTIES:
+  :LINK: [[https://www.google.com/calendar/event?eid=XzhvbzNpZ2hvNmgyajRiOWc4Z28zY2I5azc0b2ppYmExNmNzNGNiYTY2OTE0OGhoazZ0MGs4ZDFrODhfMjAxNTA3MjEgZm9yaGltMTg1QG0][Go to gcal web page]]
+  :ID: _8oo3igho6h2j4b9g8go3cb9k74ojiba16cs4cba669148hhk6t0k8d1k88_20150721
+  :ARCHIVE_TIME: 2015-08-20 Thu 21:44
+  :ARCHIVE_FILE: ~/Dropbox/org/work.org
+  :ARCHIVE_CATEGORY: work
+  :END:
+
+  <2015-07-21 Tue>
+
+* DONE Convert Form to Ajax to add detailed answers which will make code simpler
+CLOSED: [2015-08-21 Fri 13:28]
+:LOGBOOK:
+CLOCK: [2015-08-21 Fri 10:49]--[2015-08-21 Fri 11:14] =>  0:25
+:END:
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-08-24 Mon 10:16
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
 
-** DONE ma15@realtime update with jobs                                :WORK:
-DEADLINE: <2014-08-11 Mon>
+* DONE Setup Jenkins build
+CLOSED: [2015-08-24 Mon 16:17]
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-08-10 Sun 22:05
+:ARCHIVE_TIME: 2015-08-24 Mon 20:37
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-*** Understand Code [3/3]
-- [X] AdProofsController.
-- [X] DocumentContoller using Pusher in Client
-- [X] How to use Pusher Gem ; Pusher.trigger(channels, e_name, data)
-
-*** Descritpion
-At the moment jobs page is updated whenever being visited.
-This shall be changed to be updated whenever jobs are updated
-
-*** Test
-
-**
-
-** DONE [#A] ma25@add cateory to report CSV                           :WORK:
-DEADLINE: <2014-08-11 Mon>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-10 Sun 22:05
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
 
-** DONE [#B] ask Paul about `dealership` table
-SCHEDULED: <2014-08-11 Mon>
+* DONE Fix failed tests
+CLOSED: [2015-08-24 Mon 16:17]
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-08-11 Mon 15:26
+:ARCHIVE_TIME: 2015-08-24 Mon 20:37
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-*** Description: Paul deleted `client` from Dealership table but there are still some logic related
-*** James is fixing this issue.
-
-** DONE [#A] Fix Failed test cases [2/2]
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-13 Wed 12:10
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-*** DONE Fix RailsFactory
-
-*** DONE Server Rspec [4/4]
-DEADLINE: <2014-08-12 Tue>
-- [X] Model
-- [X] Controller
-- [X] Fix rails bugs
-- [X] Fix CI Server Rspec Gems dependencies
-
-** DONE [#A] Check property `second_steps` in `client` table          :WORK:
-SCHEDULED: <2014-08-12 Tue>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-13 Wed 12:14
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
 
-** DONE [MA-36] Integration test in Bamboo CI [6/6]                   :WORK:
-DEADLINE: <2014-08-17 Sun>
+* DELEGATED [#A] Configurable Insurance Questions                     :@work:
+SCHEDULED: <2015-08-27 Thu>
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-08-21 Thu 09:43
+:Effort: 2day
+:ARCHIVE_TIME: 2015-08-26 Wed 09:57
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DELEGATED
+:END:
+This is delegated to ~CP~
+
+* DONE Add GAP in Page with Premium Options                           :@work:
+CLOSED: [2015-08-31 Mon 14:02] SCHEDULED: <2015-08-28 Fri>
+:PROPERTIES:
+:Effort: 4:00
+:ARCHIVE_TIME: 2015-08-31 Mon 14:07
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
-- [X] Look into Capybara Gem which is ruby selenium
-- [X] Setup phantom js
-- [X] Write test to login to see if it's working
-- [X] Setup vagrant to access with url 'audi.myadbox.dev'
-- [X] Testing with Bamboo server
-- [X] Send notification via Slack
+Questions:
+Are you taking out this insurance at the commencement of your finance agreement?
+YesNo
+Do you have Comprehensive motor vehicle insurance?
+YesNo
+Will the vehicle be used for hire fare or reward or as a taxi, rental, loan or driving school vehicle motor sports, fast food delivery, emergency or law enforcement, transport of hazardous or inflammable goods or towing for income?
+YesNo
 
-** DONE [MYAD-11] As I dealer I would like to upload an asset into an ad [5/5] :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-22 Fri 11:08
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
+* DONE Add premium summary page partial form for GAP [0/0]            :@work:
+CLOSED: [2015-08-31 Mon 16:22] SCHEDULED: <2015-08-31 Mon>
+:LOGBOOK:
+CLOCK: [2015-08-31 Mon 14:08]--[2015-08-31 Mon 14:33] =>  0:25
 :END:
-- [X] Check upload tag from xml
-- [X] Add button if upload value is true
-- [X] Show upload field ui when button is clicked
-- [X] Add exception cases - while uploading a file; hide `X`
-- [X] Refactoring as Paul commented
-
-** DONE [MA-38] Improve asset selector                                :WORK:
-DEADLINE: <2014-08-25 Mon>
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-08-26 Tue 11:41
+:Effort: 1:00
+:ARCHIVE_TIME: 2015-09-04 Fri 20:43
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-Description : After cropping a image, that edited image shall be displayed in
-preview in editing mode.
-
-** DONE [MYAD-50] Custom note on an ad [2/2]                          :WORK:
-DEADLINE: <2014-08-27 Wed>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-27 Wed 14:07
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] fix CSS bugs
-- [X] verify UX, editable all the time?
-
-** DONE [#A] [MYAD-2] In Darebin need to check that emails are being generated for approvals [9/9] :WORK:
-DEADLINE: <2014-08-27 Wed>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-08-27 Wed 17:41
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] Create a `communication_approver` role
-- [X] Add `communication_approvals`, `write`, `all` permission to that role.
-- [X] Add a after method to finish to send approval email : NotificationMailer.document_to_approve
-- [X] Add new NotificationMailer method to send "Document for approval" email. (Only send to communication approvers)
-- [X] Add rspec codes for testing as well
-- [X] Test manually
-- [X] Modify Query statement only for client and role
-- [X] Modify Email template
-- [X] Modify logo image file and css
-
-** DONE [MYAD-140] Add pagination in ad table [3/3]                   :WORK:
-DEADLINE: <2014-09-09 Tue>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-09 Tue 13:53
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] Create directive for pagination
-- [X] Do refactoring with directive for pagination
-- [X] Add pagination in /ads page
-
-** DONE [MYAD-150] Show `uploaded at` next to a template asset file [2/2] :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-10 Wed 12:19
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] add fields in DB to store preview_image and asset's updated data
-- [X] add logic to display them in client
-
-** DONE [MYAD-150] Price Field in Template [2/2]                      :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-12 Fri 12:07
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] format in currency
-- [X] allow only number
-
-** DONE [MYAD-183] Scheduled AdRequest Deletion [3/3]                 :WORK:
-DEADLINE: <2014-09-15 Mon>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-15 Mon 17:33
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] add checked_to_delete column
-  type is boolean
-- [X] modify `destroy method` to check the field rather than deleting
-- [X] Add rake task to delete all rows where the field, `checked_to_delete` is true
-
-** DONE [MYAD-200] Registering a user [5/5]                           :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-22 Mon 10:12
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] Registering page
-- [X] Registering controller
-- [X] Sending email to a user whose role is user_approval
-- [X] Approval page
-- [X] Use `https` because of password
-
-** DONE [MYAD-184] Multiple dates in new builder [2/2]                :WORK:
-DEADLINE: <2014-09-17 Wed>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-22 Mon 10:12
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-Sanjei is working on CSS
-- [X] create `multidate-picker` directive
-- [X] replace `exiting one` with the newer directive
-
-** DONE [MYAD-169] Make links in metadata clickable [2/2]             :WORK:
-DEADLINE: <2014-09-22 Mon>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-09-22 Mon 13:52
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] switch b/w label and textbox with edit button
-- [X] in case text is for url, make it clickable
-
-** DONE Check with workflow [2/2]                                     :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-10-30 Thu 09:54
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- [X] workflow.rb ; EDM type
-- [X] document_controller.coffee
-
-** DONE Yearly-view in Planner                                        :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-10-30 Thu 09:54
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
+:ARCHIVE_OLPATH: Work Tasks
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
 
-** DONE MI uploading [4/4]                                            :WORK:
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-11-07 Fri 14:15
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: TODO
+* DONE Add payment methods for TOYOTA                                 :@work:
+CLOSED: [2015-09-03 Thu 17:32]
+:LOGBOOK:
+CLOCK: [2015-08-31 Mon 16:23]
 :END:
-- [X] create a class to store data
-- [X] validating CSV data uploaded
-- [X] Creating suggestions and it's ui
-- [X] displaying data in planner UI which shall be similar to `publishes`
-
-** DONE New Quarter View [4/4]                                        :WORK:
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-12-09 Tue 15:17
+:ARCHIVE_TIME: 2015-09-04 Fri 20:43
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: TODO
-:END:
-- [X] Display icons in primary-bar
-- [X] FIX BUG - calculating the number of publication
-- [X] Filtering with ad_type
-- [X] Filtering with Category
-
-** DONE Planner-YearView [1/1]                                        :WORK:
-DEADLINE: <2014-12-15 Mon>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-12-16 Tue 18:14
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
+:ARCHIVE_OLPATH: Work Tasks
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
-- [X] Add year view
+I think that this should be configurable
 
-** DONE Custom Ad [3/3]                                               :WORK:
-DEADLINE: <2014-12-15 Mon>
+* DONE Add button to resync with origination                          :@work:
+CLOSED: [2015-09-07 Mon 17:12] SCHEDULED: <2015-09-07 Mon>
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-12-29 Mon 10:31
+:Effort: 2:00
+:ARCHIVE_TIME: 2015-09-07 Mon 17:12
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-- Note taken on [2014-12-15 Mon 09:28] \\
-  Adding rich text is not that easy
-- [X] Add logic validate budget optionally in Old builder
-- [X] RichText in Brief ?; Shall need to talk to Paul
-- [X] New builder shall support the same feature [2/2]
-  - [X] Due directive
-  - [X] Budget directive
-
-** DONE Year View Fix Bug                                             :WORK:
-DEADLINE: <2014-12-16 Tue>
-:PROPERTIES:
-:ARCHIVE_TIME: 2014-12-29 Mon 10:31
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work
+:ARCHIVE_OLPATH: Work Tasks
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
 
-** DONE Block Plan [4/4]                                             :@work:
-DEADLINE: <2015-01-02 Fri>
+* DONE Separate Tabs into customer and histories
+CLOSED: [2015-09-10 Thu 11:14] SCHEDULED: <2015-09-10 Thu>
+:LOGBOOK:
+CLOCK: [2015-09-10 Thu 10:14]--[2015-09-10 Thu 10:39] =>  0:25
+:END:
 :PROPERTIES:
-:ARCHIVE_TIME: 2014-12-31 Wed 11:07
+:Effort: 2:00
+:ARCHIVE_TIME: 2015-09-11 Fri 13:37
 :ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Myadbox Tasks
+:ARCHIVE_OLPATH: Work Tasks
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
 :END:
-+ [X] Create Dealer-Group modal menu
-+ [X] Create publication modal menu
-+ [X] Modify CSS in modal menus
-+ [X] Convert Block-Plan to Campaign; When? @Paul and @Cam
+
+* DONE Remove HTML5 date                                              :@work:
+CLOSED: [2015-09-10 Thu 22:47] SCHEDULED: <2015-09-10 Thu>
+:LOGBOOK:
+CLOCK: [2015-09-10 Thu 11:14]--[2015-09-10 Thu 11:39] =>  0:25
+:END:
+:PROPERTIES:
+:Effort: 0:30
+:ARCHIVE_TIME: 2015-09-11 Fri 13:37
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Synch policy number                                            :@work:
+CLOSED: [2015-09-10 Thu 10:13] SCHEDULED: <2015-09-10 Thu>
+:PROPERTIES:
+:Effort: 0:30
+:ARCHIVE_TIME: 2015-09-11 Fri 13:37
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+
+* DONE Origination JIRA Issuse                                        :@work:
+CLOSED: [2015-09-17 Thu 10:00] SCHEDULED: <2015-09-10 Thu>
+:LOGBOOK:
+CLOCK: [2015-09-11 Fri 13:37]
+:END:
+:PROPERTIES:
+:Effort: 1:00
+:ARCHIVE_TIME: 2015-09-22 Tue 15:06
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+[[mu4e:msgid:CAODn0wu%2Bb4K3ztOZk-cj1Ee8BzqaAf8cz8x02sQAF3Si9LMb4w@mail.gmail.com][Insurance/Prod Support Issues]]
+
+- [X] CS-1638 :  Unable to Acknowledge Applications
+- [X] CS-1524 (MBFSCR-1526) : ClickSell - unable to copy application due to invalid ~area_code~
+- [X] CS-1640 (MBFSCR-1548) :  Customer Name and Contacts details do not transfer from Preliminary Screen To Customer Screen
+  1. Question, code would be fine?
+- [X] CS-1314 UI Bug
+  - [X] Firefox
+  - [X] IE9 - Win7
+  - [X] IE10 - Win 7
+  - [X] IE11 - Win 7
+  - [X] Chrome
+
+* DONE [#A] Talk to @Steve about JIRA ISSUE                           :@work:
+CLOSED: [2015-09-24 Thu 04:37] SCHEDULED: <2015-09-23 Wed>
+:LOGBOOK:
+CLOCK: [2015-09-23 Wed 09:53]--[2015-09-23 Wed 10:18] =>  0:25
+:END:
+:PROPERTIES:
+:Effort: 0:30
+:ARCHIVE_TIME: 2015-09-24 Thu 04:37
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+JIRA issues : 463, 466, 471, 473 is related to finance product filter codes
+This could be changed based on product name.
+
+#+begin_src html
+{{#financeProductConfiguration 'lct_applicable' ..}}
+#+end_src
+
+* DONE NFSNZRPOS-481                                               ::@Steve::
+CLOSED: [2015-09-30 Wed 11:14]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-09-30 Wed 11:15
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+Need @Steve's explanation

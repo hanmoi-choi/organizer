@@ -1,7 +1,0 @@
-
-* 2014
-** 2014-12 December
-*** 2014-12-31 Wednesday
- - [[file:~/Dropbox/org/work.org::*PENDING%20Managing%20dealership][PENDING Managing dealership {2/2}]]
-
-Updating emacs configuration

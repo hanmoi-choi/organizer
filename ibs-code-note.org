@@ -1,0 +1,5 @@
+* In Order to pass the result of method value edit here
+[[file:~/dev/fm_origination_nfs_mbfs_merge/project/app/views/finance_applications/edit.html.erb][edit.html.erb file]]
+** Sample code
+[[file:~/dev/fm_origination_nfs_mbfs_merge/project/app/views/finance_applications/edit.html.erb]]
+[[file:~/dev/fm_origination_nfs_mbfs_merge/project/app/views/finance_applications/edit.html.erb][test]]

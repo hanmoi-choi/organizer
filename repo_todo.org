@@ -1,0 +1,5 @@
+* Repo Todos
+** TODO  Missing paramemter      <2015-10-05 Mon 10:10>
+NFSNZRPOS-472
+document_registration_fee_applicable is not being sent to fm_origination
+Link: file:~/dev/fm_admin/app/dtos/finance_product_dto.rb

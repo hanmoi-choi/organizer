@@ -1,0 +1,24 @@
+* Tasks
+** TODO Modify org-jira to adapt IBS soap definition               :@coding:
+SCHEDULED: <2015-09-26 Sat>
+:PROPERTIES:
+:Effort: 1day
+:END:
+** TODO Setup mu4e writing email with ~org~ mode               :@coding:
+SCHEDULED: <2015-09-26 Sat>
+:PROPERTIES:
+:Effort: 1day
+:END:
+** DONE Check TPG adsl+ speed                                        :@home:
+CLOSED: [2015-10-04 Sun 22:11] SCHEDULED: <2015-09-28 Mon>
+:PROPERTIES:
+:Effort: 0:30
+:END:
+Use Ethernet Cable
+Still not that fast
+Coper cable issue
+** DONE [#A] Music Team                                            :@church:
+CLOSED: [2015-10-04 Sun 22:11] SCHEDULED: <2015-10-04 Sun>
+:PROPERTIES:
+:Effort: 1:00
+:END:

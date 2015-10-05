@@ -1,0 +1,8 @@
+* Test Servers
+ID: X0021U02
+PW: password
+[[http://test-nfsnz-pos.ibsa.vlan][nfs origination]]
+[[http://test-nfsnz-sbo.ibsa.vlan][nfs admin]]
+
+* DEV sites
+[[https://jira.ibsglobalweb.com/][JIRA]]
