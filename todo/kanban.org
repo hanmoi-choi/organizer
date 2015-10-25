@@ -1,0 +1,12 @@
+| TODO                      | STARTED | WAITING | MEMO | SOMEDAY | DONE |
+|---------------------------+---------+---------+------+---------+------|
+| [[/Users/danielc/Dropbox/org/todo/organizer.org::TODO Modify org-jira to adapt IBS soap definition               :@coding:][Modify org-jira to adapt ]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/organizer.org::TODO Setup mu4e writing email with ~org~ mode               :@coding:][Setup mu4e writing email ]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  Need to check error message      <2015-10-06 Tue 10:39>][ Need to check error mess]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  need to be modified files since I just copied 2files      <2015-10-08 Thu 09:42>][ need to be modified file]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  need to check logic with @Steve      <2015-10-08 Thu 13:07>][ need to check logic with]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  Use better way to define b/w asset and application      <2015-10-15 Thu 14:45>][ Use better way to define]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  Fix Bug; when change finance product, quote is gone      <2015-10-16 Fri 16:32>][ Fix Bug; when change fin]] |         |         |      |         |      |
+| [[/Users/danielc/Dropbox/org/todo/repo_todo.org::TODO  Need to check codes with @Steve      <2015-10-20 Tue 11:03>][ Need to check codes with]] |         |         |      |         |      |
+|                           |         |         |      |         |      |
+#+TBLFM: @2$1..@>$>='(kanban-zero @# $#)::@1='(kanban-headers $#)

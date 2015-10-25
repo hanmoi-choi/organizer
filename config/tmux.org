@@ -1,0 +1,257 @@
+* Default Key Bindings
+** remap prefix from 'C-b' to 'C-a'
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind C-b
+set-option -g prefix `
+bind-key ` send-prefix
+#+end_src
+
+** Setting the delay b/w prefix and command
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set -s escape-time 1
+#+end_src
+
+** Set the base index for windows to 1
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set -g base-index 1
+#+end_src
+
+* Pane Management
+** Set the base index for panes to 1
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+setw -g pane-base-index 1
+#+end_src
+
+** Reload the config file - <S>
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind !
+bind ! source-file ~/.tmux.conf \; display "Reloaded!"
+#+end_src
+
+** Splitting Panes
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind | split-window -h
+bind \ split-window -h
+bind - split-window -v
+#+end_src
+
+** Moving b/w panes
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind l # unbind default binding for `last-window`
+bind h select-pane -L
+bind j select-pane -D
+bind k select-pane -U
+bind l select-pane -R
+#+end_src
+
+** Pane resizing
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind -r C-h resize-pane -L 5
+bind -r C-j resize-pane -D 5
+bind -r C-k resize-pane -U 5
+bind -r C-l resize-pane -R 5
+#+end_src
+
+** Cycle Panes
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind Space
+bind   Space select-pane -t :.+  # cycle panes
+bind   C-Space select-pane -t :.-  # cycle panes in reverse
+#+end_src
+
+** Kill Pane, if last pane, kill window
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind   x if "tmux display -p \"#{window_panes}\" | grep ^1\$" "confirm-before -p \"Kill the only pane in window? It will kill this window too! (y/n)\" kill-pane" "kill-pane"
+#+end_src
+
+** Zoom Panes
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind   z resize-pane -Z
+#+end_src
+
+** Copy Current Pane's Path
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind C-p
+bind   C-p run -b "tmux display -p -F '#{pane_current_path}' | xclip -i" \; display "Copied current path '#{pane_current_path}' to the clipboard."
+#+end_src
+
+* Window Management
+** Create new Window and rename it
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind c
+bind C-n command-prompt -p "New window:" "new-window -c '#{pane_current_path}' -n %1"
+unbind  , # unbind default binding for `rename-window`
+bind r command-prompt -p "New name for this window:" "rename-window '%%'"
+#+end_src
+
+** List Windows
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind   ? list-windows -F '#{window_index}:#{window_name}: #{?pane_dead, (dead), (not dead)}'﻿
+#+end_src
+
+** Swap Windows
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind  , # unbind default binding for `rename-window`
+bind -r , swap-window -t -1 # move window one position to the left
+bind -r < swap-window -t -1 # move window one position to the left
+unbind  . # unbind default binding to move window to user provided index
+bind -r . swap-window -t +1 # move window one position to the right
+bind -r > swap-window -t +1 # move window one position to the right
+#+end_src
+
+** Kill Window
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind & # unbind default binding for `kill-window`
+bind C-c confirm-before -p "Kill this window? (y/n)" kill-window
+#+end_src
+
+** Switch to another window by name
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind   w split-window "tmux lsw | percol --initial-index `tmux lsw | awk '/active.$/ {print NR-1}'` | cut -d':' -f 1 | xargs tmux select-window -t"
+#+end_src
+
+** Forward & Backward b/w windows
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind -r   p previous-window
+bind -r   n next-window
+#+end_src
+
+* Session Management
+** Rename Session
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind R command-prompt -p "New name for this session:" "rename-session '%%'"
+#+end_src
+** Switch to previously selected session
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+unbind L # unbind default binding for `switch-client -l`
+bind   b switch-client -l # switch to previously selected session
+#+end_src
+** Switch to another session by name
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind   S split-window "tmux ls | percol --initial-index `tmux ls | awk '/attached.$/ {print NR-1}'` | cut -d':' -f 1 | xargs tmux switch-client -t"
+#+end_src
+
+* Mouse
+** Mouse On
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set-option -g -q mouse on
+bind-key -T root PPage if-shell -F "#{alternate_on}" "send-keys PPage" "copy-mode -e; send-keys PPage"
+bind-key -t vi-copy PPage page-up
+bind-key -t vi-copy NPage page-down
+#+end_src
+
+* Status Bar
+** Message Text
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set -g message-fg black
+set -g message-bg Magenta
+set -g message-command-fg blue
+set -g message-command-bg black
+#+end_src
+
+** Mode
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+setw -g clock-mode-colour colour135
+setw -g mode-attr bold
+setw -g mode-fg colour196
+setw -g mode-bg colour238
+#+end_src
+
+** Pane
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set -g pane-border-fg black
+set -g pane-active-border-fg brightred
+
+set -g status-justify centre
+set -g status-bg default
+set -g status-fg colour12
+set -g status-interval 2
+setw -g mode-bg colour6
+setw -g mode-fg colour0
+
+setw -g window-status-format " #F#I:#W#F "
+setw -g window-status-current-format " #F#I:#W#F "
+setw -g window-status-format "#[fg=magenta]#[bg=black] #I #[bg=cyan]#[fg=colour8] #W "
+setw -g window-status-current-format "#[bg=brightmagenta]#[fg=colour8] #I #[fg=colour8]#[bg=colour14] #W "
+setw -g window-status-current-bg colour0
+setw -g window-status-current-fg colour11
+setw -g window-status-current-attr dim
+setw -g window-status-bg green
+setw -g window-status-fg black
+setw -g window-status-attr reverse
+#+end_src
+
+** Status Bar
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set -g status-position bottom
+set -g status-bg colour234
+set -g status-fg colour137
+set -g status-attr dim
+set -g status-left "#[fg=colour233,bg=colour245,bold]#H #[fg=colour233,bg=colour241,bold]| #S #[default]"
+set -g status-right '#[fg=colour233,bg=colour241,bold] %a%l:%M:%S #[fg=colour233,bg=colour245,bold] %Y-%m-%d '
+set -g status-right-length 50
+set -g status-left-length 30
+
+setw -g window-status-current-fg colour81
+setw -g window-status-current-bg colour238
+setw -g window-status-current-attr bold
+setw -g window-status-current-format ' #I#[fg=colour250]:#[fg=colour255]#W#[fg=colour50]#F '
+
+setw -g window-status-fg colour138
+setw -g window-status-bg colour235
+setw -g window-status-attr none
+setw -g window-status-format ' #I#[fg=colour237]:#[fg=colour250]#W#[fg=colour244]#F '
+
+setw -g window-status-bell-attr bold
+setw -g window-status-bell-fg colour255
+setw -g window-status-bell-bg colour1
+#+end_src
+
+* Terminal Window
+** Title
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set   -g set-titles on
+set   -g set-titles-string '#h :: #S :: #W W#I/#{session_windows} :: P#P/#{window_panes}'
+#+end_src
+
+* Etc
+** Copy and Paste
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind C-w run -b "tmux show-buffer | pbcopy"
+bind C-y run -b "exec </dev/null; pbpaste | awk 1 ORS=' ' | tmux load-buffer - ; tmux paste-buffer"
+#+end_src
+
+** Execute Tmux Command
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+bind C-x command-prompt # default command-prompt binding "PREFIX :" also works
+#+end_src
+
+** Visual Bell
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+set   -g bell-action any
+set   -g bell-on-alert off
+set   -g visual-bell on
+#+end_src
+
+** Miscellaneous
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+setw  -g aggressive-resize on
+set   -g default-terminal "xterm-256color"
+setw  -g mode-keys         vi
+setw  -g status-keys       vi
+set   -s escape-time       0 # Allows for faster key repetition
+set   -g history-limit     100000
+set   -g display-time      1000 # Duration of tmux display messages in milliseconds
+#+end_src
+
+** TMux plugin
+#+begin_src sh :noweb yes :tangle ~/.tmux.conf :export none
+# List of plugins
+set -g @plugin 'tmux-plugins/tpm'
+set -g @plugin 'tmux-plugins/tmux-yank'
+set -g @plugin 'tmux-plugins/tmux-resurrect'
+
+set -g @shell_mode 'vi'
+# Initialize TMUX plugin manager (keep this line at the very bottom of tmux.conf)
+run '~/.tmux/plugins/tpm/tpm'
+#+end_src

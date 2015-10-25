@@ -1,0 +1,27 @@
+* .msmtprc
+#+begin_src sh :noweb yes :tangle ~/.msmtprc :export none
+defaults
+tls on
+auto_from on
+logfile ~/.msmtp.log
+
+account home
+host smtp.gmail.com
+tls on
+tls_certcheck off
+auth on
+from danielc@ibsglobalweb.com
+user danielc@ibsglobalweb.com
+password Jo@nne09ii
+port 587
+
+account work
+host smtp.gmail.com
+tls on
+tls_certcheck off
+auth on
+from forhim185@gmail.com
+user forhim185@gmail.com
+password EstherJo@nne09ii
+port 587
+#+end_src

@@ -1,0 +1,18 @@
+* Repo Todos
+** TODO  Need to check error message      <2015-10-06 Tue 10:39>
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/app/assets/javascripts/edit_finance_application/address_search.js
+This should be tested with new API
+** TODO  need to be modified files since I just copied 2files      <2015-10-08 Thu 09:42>
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/lib/bfs_specific/document_generators/print_commercial_credit_application.rb
+- CommercialCreditApplicationPersonApplicant and CommercialCreditApplicationForCompanies are the same file
+** TODO  need to check logic with @Steve      <2015-10-08 Thu 13:07>
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/app/models/finance_application.rb
+** TODO  Use better way to define b/w asset and application      <2015-10-15 Thu 14:45>
+
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/app/background_processes/get_updated_insurance_applications.rb::#TODO:(DC)%20Should%20be%20use%20better%20way%20to%20define%20b/w%20asset%20and%20application
+** TODO  Fix Bug; when change finance product, quote is gone      <2015-10-16 Fri 16:32>
+
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/app/models/finance_application.rb
+** TODO  Need to check codes with @Steve      <2015-10-20 Tue 11:03>
+ residual_gst is accumulating continually
+ Link: file:~/dev/fm_origination_nfs_mbfs_merge/project/app/models/finance_application.rb

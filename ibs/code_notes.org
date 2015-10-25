@@ -1,0 +1,14 @@
+
+** Debug in AWS
+1. Tomcat7/webapps
+2. java -jar origination.war -S rails c
+* Originatin
+** JS
+1. Codes to update JS Objects and Server Object
+   - [[file:~/dev/fm_origination_nfs_mbfs_merge/project/app/assets/javascripts/edit_finance_application/js_model.js][js_model's _update()]]
+   - How to work
+     - onBeforeChange is called before AJAX Request
+     - AJAX request
+     - OnChange is called
+2. Codes to generate Global JS Objects
+   - [[file:~/dev/fm_origination_nfs_mbfs_merge/project/app/views/finance_applications/edit.html.erb::<%25%20content_for%20:initial_page_setup%20do%20%25][edit.js.erb]]

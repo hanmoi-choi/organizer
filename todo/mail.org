@@ -1,0 +1,4 @@
+* Inbox
+** TODO Electricity Fee, Link: [[gnus:nnimap%2Bprivate:INBOX#16921276.284@billing.energyaustraliaonline.com.au][Email from EnergyAustralia: View your EnergyAustralia Elec]]
+** TODO NFS JIRA ISSUEs, Link: [[gnus:nnimap%2Bwork:INBOX#CAMe%3DAS0z2Z4fdfAot9MB2kHROnE8MoAwEE6cHeXYFAnYB6K1WA@mail.gmail.com][Email from Andrew Mishura: NFS: Update on bug cases in JI]]
+** TODO MBFS VPN, Link: [[gnus:nnimap%2Bwork:INBOX#CAJb50vcFz1%2BH6536DbHQY9c%3DB3QOYNCKBqAd9To_UTLhyurpYg@mail.gmail.com][Email from Tim Gabric: Re: MBFS VPN]]

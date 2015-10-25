@@ -301,3 +301,25 @@ CLOSED: [2015-09-30 Wed 11:14]
 :ARCHIVE_TODO: DONE
 :END:
 Need @Steve's explanation
+
+* DONE NFSNZRPOS-475                                           :@work::Steve:
+CLOSED: [2015-10-05 Mon 12:47]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-10-06 Tue 09:20
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: DONE
+:END:
+Need to get ~production codes~ from Nissan
+At the moment, NFSNZ finance product's default codes are diffrent from files' name
+Use code in fm_admin
+
+* DONE NFSNZRPOS-470                                               ::@Steve::
+CLOSED: [2015-10-06 Tue 09:44]
+:PROPERTIES:
+:ARCHIVE_TIME: 2015-10-06 Tue 09:44
+:ARCHIVE_FILE: ~/Dropbox/org/work.org
+:ARCHIVE_CATEGORY: work
+:ARCHIVE_TODO: WAITING
+:END:
+Need @Steve's feedback & migration codes

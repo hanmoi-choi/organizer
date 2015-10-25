@@ -1,0 +1,12 @@
+* Local using Libre Office
+1. Find *.odt file, which is Libre Office file extension
+   1. *.odt is ziped file and in it there are several xml files
+2. Find xml file inside *.odt
+3. Substitute tags(#XXX_XXXX) with data
+   1. Table or Section named as #application
+   2. data will be either Hash or Array
+4. Send XML data to Doc Generation Server to create PDF
+5. Return URL for XML to client
+
+* Admin Module using MS Word
+Send D

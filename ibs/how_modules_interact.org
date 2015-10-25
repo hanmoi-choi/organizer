@@ -1,0 +1,29 @@
+* POS
+** POS contains                                                    :ORDERED:
+:PROPERTIES:
+:ORDERED:  t
+:END:
+1. Origination
+   1. create FinanceApplication
+2. Admin
+   1. All sorts of configuration is done here
+3. Insurance
+   1. create InsuranceApplication
+4. Credit
+   1. Underwriting FinanceApplication to accept or reject
+5. Settlement
+   1. Finalize FinanceApplication when it is accepted
+6. Data WareHouse
+   1. DataWare to do reporting
+7. Document Repository
+   1. To save Document for modules
+* How Work
+** Mechanism
+1. Use HTTP
+2. Notification and Pulling Mechanism
+   1. When there is a changes in DB to be neeeded synchronisation, send notification to destination module
+   2. When Dest module get notification, it ask source module to send the whole changes
+      1. Contents are determined with timestamp
+** Module
+1. fm_base is used
+2. either run bg_proc process or run individual job_runner in *rails c*

@@ -1,0 +1,72 @@
+* Setup Dev Env
+** How to
+1. Clone Git Repo from [[file:urls.org::*GitLab][GitLab]]
+2. Default Gem is 1.9.3
+3. create DBs
+   1. for origination *DEPLOYMENT_CLIENT* should be used
+      - tfa
+      - mbfs
+      - nfsnz
+   2. for admin use Backup File, [[/Users/danielc/Dropbox/admin_dump.backup]]
+4. create users
+   1. for origination, use this codes in rails console to grant roles
+      #+begin_src ruby
+      Options.roles_order.each do |role_name|
+        role = admin.grant_role(role_name)
+        if role.limited?
+          role.application_role_dealerships.each(&:remove!)
+          role.limited = false
+        end
+      end
+      admin.save(:validate => false)
+      #+end_src
+
+** PORT #
+origination : 3000
+insurance : 3030
+admin : 2999
+
+** PW
+Common ID/PW : admin/password
+
+* Printer IP
+168.192.168.41
+
+* Clients
+** NFS - NISSAN
+- Using all of our modules
+- Origination, Accelerate
+** TFA - TOYOTA
+- Using our Credit modules
+** MBFS - BENZ
+- Origination, ClickSell
+* How Interflow works?
+
+#+begin_src ditaa :file interflow.png :cmdline -r
+
++----------------------+                      +----------------------+                +----------------------+
+|                      |         SOAP         |                      |                |                      |
+|      Origination     |--------------------->|      Interflow       |--------------->|      MBFS CMS        |
+|                      |                      |                      |                |<Contract Management> |
+|                      |                      |                      |                |                      |
++----------------------+                      +----------------------+                +----------------------+
+
+#+end_src
+
+#+RESULTS
+* Modules Deployed
+** proxy
+1. nfsnz: ~test-nfsnz-pos.ibsa.vlan~, IP: 192.168.134.110
+
+** rmo
+1. credit
+2. settlements
+3. data_warehouse
+
+** pos
+1. origination
+2. wfe
+
+** sbo
+1. admin
+2. banking
