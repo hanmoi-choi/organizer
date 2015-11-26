@@ -1,0 +1,70 @@
+* Internal Test Servers
+** NFS
+ID: X0021U02
+PW: password
+[[http://test-nfsnz-pos.ibsa.vlan/origination][nfs origination]]
+[[http://test-nfsnz-sbo.ibsa.vlan/admin][nfs admin]]
+
+* AWS URL
+** TFA
+*** [[http:54.206.57.214:8080/origination][origination]]
+*** [[http://54.206.57.214:8080/insurance][insurance]]
+*** [[http://54.206.57.214:8080/admin][admin]]
+
+
+* IBSA Site
+** JIRA
+[[https://jira.ibsglobalweb.com/]]
+
+** Jenkins Server
+ [[kenlee.ibsa.vlan:8080]]
+
+** GitLab
+[[http://git.ibsa.vlan/]]
+
+* NISSAN DEV URL
+** ID/PW
+X0021U03: Ib5a03-130503 (for others)
+X0021U02: Ib5a02-130503 (for origination)
+** WEB Site URLs
+*** Origination:
+http://nfsnzr-dev/origination/session/new
+*** Origination QA environment:
+http://nfsnzr-qa/origination/session/new
+*** Admin:
+http://nfsnzw-dev/admin/session/new
+http://nfsnzw-qa/admin/session/new
+*** Credit:
+http://nfsnzr-dev/credit/session/new
+*** Settlements:
+http://nfsnzr-dev/settlements/session/new
+*** RCM:
+http://nfsnzr-dev/rcm/session/new
+*** Banking:
+http://nfsnzw-dev/banking/session/new
+*** Commissions:
+http://nfsnzr-dev/commissions/session/new
+*** Collections:
+http://nfsnzr-dev/collections/session/new
+*** WBO:
+http://nfsnzw-dev/wbo/session/new
+*** WFE:
+http://nfsnzw-dev/wfe/session/new
+
+** DEV Console IPs
+*** Credit, Settlements, RCM
+172.16.5.205
+*** Admin
+172.16.5.141
+*** Datawarehouse, RDP, DocumentRepository
+172.16.5.143
+*** Commissions, Collections
+172.16.5.216
+*** Origination
+172.16.5.207
+
+* Special Resources for Testing
+** common
+- /job_records : to check bg_ground jobs
+** origination
+- /management/add_credit_response : to update application status

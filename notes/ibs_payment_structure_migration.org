@@ -1,0 +1,18 @@
+#+Options:
+
+* Payment Timing Migration Way
+| Payment Timing | Payment Structure | First Rental | Result                      |
+|----------------+-------------------+--------------+-----------------------------|
+| advance        | Regular           | T            | advance_first_rental        |
+| arrears        | Regular           | T            | arrears_first_rental        |
+| advance        | Regular           | F            | regular_advance_payments    |
+| arrears        | Regular           | T            | regular_arrears_payments    |
+| advance        | Structure         | F            | structured_advance_payments |
+| arrears        | Structure         | F            | structured_arrears_payments |
+|                | 1/3,1/3,1/3       |              | not changed                 |
+|                | 50/50             |              | not changed                 |
+
+** Structured Payment
+*** I could see the table where I could structure my payment
+** Regular Payment
+*** I could not see the table when will pay as the calculator

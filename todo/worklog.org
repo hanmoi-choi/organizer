@@ -1,0 +1,55 @@
+#+FILETAGS: NOTE
+* 2015
+** 2015-09 September
+*** 2015-09-30 Wednesday
+** 2015-10 October
+*** 2015-10-29 Thursday
+**** MBFS VPN, Link: [[gnus:nnimap%2Bwork:INBOX#CAJb50vcFz1%2BH6536DbHQY9c%3DB3QOYNCKBqAd9To_UTLhyurpYg@mail.gmail.com][Email from Tim Gabric: Re: MBFS VPN]]
+** 2015-11 November
+*** 2015-11-02 Monday
+**** Origination                                                    :NOTE:
+- Fix RSepc
+*** 2015-11-02 Tuesday
+**** Holiday                                                        :NOTE:
+*** 2015-11-04 Wednesday
+**** Day Off                                                        :NOTE:
+*** 2015-11-06 Friday
+**** Origination                                                    :NOTE:
+- Fix Rspec
+*** 2015-11-09 Monday
+**** Origination                                                    :NOTE:
+- Fix JIRA Issues
+*** 2015-11-10 Tuesday
+**** Origination                                                    :NOTE:
+- Fix JIRA Issues
+*** 2015-11-11 Wednesday
+**** Origination                                                    :NOTE:
+- Fix JIRA Issues
+*** 2015-11-12 Thursday
+**** Origination                                                    :NOTE:
+- Fix JIRA Issues
+*** 2015-11-12 Friday
+**** Origination                                                    :NOTE:
+- Fix JIRA Issues
+*** 2015-11-16 Monday
+**** Origination                                                    :NOTE:
+*** 2015-11-17 Tuesday
+**** Origination                                                    :NOTE:
+*** 2015-11-18 Wednesday
+**** Origination                                                    :NOTE:
+*** 2015-11-19 Thursday
+**** Origination                                                    :NOTE:
+*** 2015-11-20 Friday
+**** Origination                                                    :NOTE:
+*** 2015-11-23 Monday
+**** Origination                                                    :NOTE:
+Fix Rspec
+*** 2015-11-24 Tuesday
+ - [[file:~/Dropbox/org/todo/worklog.org::*Origination][Origination]]
+*** 2015-11-25 Wednesday
+**** Origination
+Fix Jira Issues
+*** 2015-11-26 Thursday
+**** Origination
+Fix JIRA Issues
+Fix Rspec

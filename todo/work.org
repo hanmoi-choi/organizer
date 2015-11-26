@@ -1,4 +1,34 @@
-* Quick notes
-* 2015
-** 2015-09 September
-*** 2015-09-30 Wednesday
+#+FILETAGS: WORK
+* fm_origination                                             :fm_origination:
+:PROPERTIES:
+:CATEGORY: fm_origination
+:ARCHIVE: %s_archive::* fm_origination
+:END:
+** DONE Fix Payment Details View Spec
+CLOSED: [2015-11-26 Thu 23:24]
+:LOGBOOK:
+CLOCK: [2015-11-23 Mon 13:07]--[2015-11-23 Mon 13:32] =>  0:25
+:END:
+[2015-11-23 Mon 13:05]
+- [X] Payment Structure Options
+- [X] showRVKMDropdown
+- [X] Loan Term
+- [X] Payment Frequency
+- [X] Override RV
+- [X] Interest Rate: Line# 102
+
+* fm_insurance                                                 :fm_insurance:
+:PROPERTIES:
+:CATEGORY: fm_insurance
+:ARCHIVE: %s_archive::* fm_insurance
+:END:
+* fm_admin                                                         :fm_admin:
+:PROPERTIES:
+:CATEGORY: fm_credit
+:ARCHIVE: %s_archive::* fm_credit
+:END:
+* fm_credit                                                       :fm_credit:
+:PROPERTIES:
+:CATEGORY: fm_credit
+:ARCHIVE: %s_archive::* fm_credit
+:END:

@@ -1,0 +1,144 @@
+* Practical Vim
+** Key Conventions
+[[file:vim_practical_images/key_conventions_1.png][]]
+[[file:vim_practical_images/key_conventions_2.png][]]
+[[file:vim_practical_images/key_conventions_3.png][]]
+** Commands
+*** Operator Commands
+| Trigger | Effect                                            |
+|---------+---------------------------------------------------|
+| c       | Change                                            |
+| d       | Delete                                            |
+| y       | Yank into register                                |
+| g~      | Swap case                                         |
+| gu      | Make lower case                                   |
+| gU      | Make upper case                                   |
+| >       | Shift right                                       |
+| <       | Shift left                                        |
+| =       | Autoindent                                        |
+| !       | Filter {motion} lines through an external program |
+
+** Chpater1, Basic
+*** Tip1, Meet Dot Command
+[[file:vim_practical_images/tip1.png][]]
+*** Tip2, Do not repeat yourself
+[[file:vim_practical_images/tip2.png][]]
+*** Two for the one price
+[[file:vim_practical_images/tip2_1.png][]]
+*** Tip3, Take One Step Back, Then Three Forward
+[[file:vim_practical_images/tip3.png][]]
+*** Tip4, Act, Repeat, Reverse
+[[file:vim_practical_images/tip4.png][]]
+** Chapter2, Normal Mode
+*** Tip12, Combine and Conquer
+~Operator + Motion = Action~
+The d{motion} command can operate on a single character (dl), a complete word (daw), or an entire paragraph (dap).
+
+** Chapter3, Insert Mode
+*** Tip13, Make Corrections Instantly from Insert Mode
+| Keystrokes | Effect                                |
+|------------+---------------------------------------|
+| <C-h>      | Delete back one character (backspace) |
+| <C-w>      | Delete back one word                  |
+| <C-u>      | Delete back to start of line          |
+*** Tip15, Paste from a Register Without Leaving Insert Mode
+[[file:vim_practical_images/tip15.png][]]
+**** Use <C-r>{register} for Character-wise Registers
+The <C-r>{register} command is convenient for pasting a few words from Insert mode.
+If the register contains a lot of text, you might notice a slight delay before the screen updates.
+That’s because Vim inserts the text from the reg- ister as if it were being typed one character at a time.
+If the ‘textwidth’ or ‘autoindent’ options are enabled, you might end up with unwanted line breaks or extra indentation.
+The <C-r><C-p>{register} command is smarter. It inserts text literally and fixes any unintended indentation (see :h i_CTRL-R_CTRL-P   ).
+But it’s a bit of a handful! If I want to paste a register containing multiple lines of text, I prefer to switch to Normal mode and use one of the put commands
+*** Tip17, Insert Unusual Characters by Character Code
+[[file:vim_practical_images/tip17.png][]]
+*** Tip18, Overwrite Existing Text with Replace Mode
+=R=
+** Chapter4, Normal Mode
+*** Tip21, Define a Visual Selection
+| Command | Effect                             |
+|---------+------------------------------------|
+| v       | Enable character-wise Visual mode  |
+| V       | Enable line-wise Visual mode       |
+| <C-v>   | Enable block-wise Visual mode      |
+| gv      | Reselect the last visual selection |
+**** Toggling the Free End of a Selection
+[[file:vim_practical_images/tip21.png][]]
+*** Tip24, Edit Tabular Data with Visual-Block Mode
+[[file:vim_practical_images/tip24.png][]]
+*** Tip25, Change Columns of Text
+[[file:vim_practical_images/tip25.png][]]
+*** Tip26, Append After a Ragged Visual Block
+[[file:vim_practical_images/tip26.png][]]
+** Chapter5, Command-Line Mode
+*** Tip27, Meet Vim’s Command Line
+[[file:vim_practical_images/tip27.png][]]
+*** Tip28, Execute a Command on One or More Consecutive Lines
+[[file:vim_practical_images/tip28.png][]]
+*** Tip29, Duplicate or Move Lines Using ‘:t’ and ‘:m’ Commands
+**** :t, :copy
+[[file:vim_practical_images/tip29_1.png][]]
+**** :m
+[[file:vim_practical_images/tip29_2.png][]]
+*** Tip30, Run Normal Mode Commands Across a Range
+[[file:vim_practical_images/tip30_1.png][]]
+[[file:vim_practical_images/tip30_2.png][]]
+*** Tip31, Repeat the Last Ex Command
+~@:~
+*** Tip33, Insert the Current Word at the Command Prompt
+~<C-r><C-w>~
+*** Tip35, Run Commands in the Shell
+[[file:vim_practical_images/tip35.png][]]
+** Chapter6, Manage Multiple Files
+*** Tip36, Track Open Files with the Buffer List
+- bnext
+- bprevious
+- bdelete
+- buffer
+*** Tip39, Divide Your Workspace into Split Windows
+**** Creating Split windows
+[[file:vim_practical_images/tip39_1.png][]]
+**** Changing the Focus B/W Windows
+[[file:vim_practical_images/tip39_2.png][]]
+**** Closing Window
+[[file:vim_practical_images/tip39_3.png][]]
+**** Resizing and Rearranging Windows
+[[file:vim_practical_images/tip39_4.png][]]
+*** Tip40, Organize Your Window Layouts with Tab Pages
+**** How to use taps
+1. ~:lcd {path}~ set the working directory locally for the current window.
+2. if we have a tab page containing two or more windows,
+   ~:windo lcd {path}~
+**** Opening and Closing Tabs
+[[file:vim_practical_images/tip40_1.png][]]
+**** Switching b/w Tabs
+[[file:vim_practical_images/tip40_2.png][]]
+** Chapter7
+*** Tip41, Open a File by Its Filepath Using ‘:edit’
+- =%= is shorthand for the filepath of the active buffer
+  - :p	Make file name a full path
+  - :~	Reduce file name to be relative to the home directory
+  - :h	Head of the file name (the last component and any separators
+		removed)
+  - :t	Tail of the file name (last component of the name).
+  - :e	Extension of the file name
+*** Tip44, Save Files to Nonexistent Directories
+=:!mkdir -p %:h=
+=:write=
+*** Tip45, Save a File as the Super User
+_The :write !{cmd} command sends the contents of the buffer as standard input to the specified {cmd}._
+_The % symbol has special meaning on Vim’s command line: it expands to represent the path of the current buffer._
+=:w !sudo tee % > /dev/null= -> =!sudo tee /etc/hosts > /dev/null.=
+** Chapter8 Navigate Inside Files with Motions
+*** Tip47, Distinguish Between Real Lines and Display Lines
+_Vim makes a distinction between real lines and display lines. When the ‘wrap’ setting is enabled (and it’s on by default)_
+_each line of text that exceeds the width of the window will display as wrapped, ensuring that no text is truncated from view._
+_As a result, a single line in the file may be represented by multiple lines on the display._
+[[file:vim_practical_images/tip47_1.png][]]
+[[file:vim_practical_images/tip47_2.png][]]
+*** Tip48, Move Word-Wise
+[[file:vim_practical_images/tip48_1.png][]]
+[[file:vim_practical_images/tip48_2.png][]]
+[[file:vim_practical_images/tip48_3.png][]]
+
+*** Tip49, Find by Character

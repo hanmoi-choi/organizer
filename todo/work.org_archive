@@ -1,325 +1,129 @@
 #    -*- mode: org -*-
 
+Archived entries from file /Users/danielc/Dropbox/org/todo/work.org
 
-Archived entries from file /Users/danielc/Dropbox/org/work.org
 
-
-* DONE Complete Application Page [6/6]                                :@work:
-CLOSED: [2015-08-07 Fri 09:29] SCHEDULED: <2015-08-05 Wed>
-:LOGBOOK:
-CLOCK: [2015-08-05 Wed 09:33]--[2015-08-05 Wed 09:58] =>  0:25
-:END:
-:PROPERTIES:
-:Effort: 2day
-:ARCHIVE_TIME: 2015-08-07 Fri 09:29
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: FM-INSURANCE
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-1. [X] Validate with ~Convert to Business~ [3/3]
-   1. [X] Prelimanary Page: Vehicle, at least one
-   2. [X] Insurance Quote: active quote, at least one
-   3. [X] Customer & History:
-      - [X] Main Driver
-      - [X] Policy Holder
-      - [X] Vehicle Usage 100%
-      - [X] All history answers are checked
-        - [X] If ~Yes~ is checked, at least one detailed answer should be existed
-2. [X] Remove Credit Card Option
-3. [X] Reorder page layout since ~Payment Details~ should be seperated form.
-4. [X] Additional Fields for ~Bank Account~ option
-   1. [X] BSB
-   2. [X] Account #
-   3. [X] Account Holder Name
-5. [X] JS Validation
-   1. [X] New Business
-   2. [X] Payment Details
-6. [X] Complete Application
-   1. [X] Validate first tab
-   2. [X] Validate 2nd tab
-   3. [X] Validate 3rd tab
-   4. [X] validate comprehensive_quote_pending, if true, false
-   5. [X] validate gap_quote_pending, if true, false
-   6. [X] validate cci_quote_pending, if true, false
-
-* DONE Finalize Insurance Demo Codes [6/6]                          :@coding:
-CLOSED: [2015-08-10 Mon 13:23] SCHEDULED: <2015-08-07 Fri>
-:LOGBOOK:
-CLOCK: [2015-08-07 Fri 09:33]--[2015-08-07 Fri 09:58] =>  0:25
-:END:
-:PROPERTIES:
-:Effort: 1day
-:ARCHIVE_TIME: 2015-08-10 Mon 17:49
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-1. [X] Underwrting refer to; need to persist the request data in DB
-   1. [X] Create Model
-   2. [X] Add JS validation
-   3. [X] Save data
-2. [X] Convert To Business
-   1. [X] Add more rspecs; success cases
-   2. [X] When success display flash message
-3. [X] Edit Customer
-4. [X] Fix strings, ~Comprehensive Policy~
-5. [X] Display quote information always
-6. [X] Add cancel button on edting customer
-
-* DONE Fix bug with Communication B/W Originatioin and Insurance [/] :@coding:
-CLOSED: [2015-08-14 Fri 10:57] SCHEDULED: <2015-08-13 Thu>
-:LOGBOOK:
-CLOCK: [2015-08-12 Wed 16:46]--[2015-09-11 Fri 13:37] => 716:51
-:END:
-:PROPERTIES:
-:Effort: 1day
-:ARCHIVE_TIME: 2015-08-14 Fri 10:57
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: FM-INSURANCE
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:ARCHIVE_ITAGS: @work
-:END:
-
-* DONE Fix UI bugs [3/3]                                            :@coding:
-CLOSED: [2015-08-14 Fri 15:44] SCHEDULED: <2015-08-14 Fri>
-:PROPERTIES:
-:Effort: 1day
-:ARCHIVE_TIME: 2015-08-14 Fri 15:44
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-1. [X] Use DateSelect for Date Type
-2. [X] Tab2's error notification should use Foundation way
-3. [X] IE9's UI compatibility
-
-* Payment Day
-  :PROPERTIES:
-  :LINK: [[https://www.google.com/calendar/event?eid=XzhvbzNpZ2hvNmgyajRiOWc4Z28zY2I5azc0b2ppYmExNmNzNGNiYTY2OTE0OGhoazZ0MGs4ZDFrODhfMjAxNTA3MjEgZm9yaGltMTg1QG0][Go to gcal web page]]
-  :ID: _8oo3igho6h2j4b9g8go3cb9k74ojiba16cs4cba669148hhk6t0k8d1k88_20150721
-  :ARCHIVE_TIME: 2015-08-20 Thu 21:44
-  :ARCHIVE_FILE: ~/Dropbox/org/work.org
-  :ARCHIVE_CATEGORY: work
-  :END:
-
-  <2015-07-21 Tue>
-
-* DONE Convert Form to Ajax to add detailed answers which will make code simpler
-CLOSED: [2015-08-21 Fri 13:28]
-:LOGBOOK:
-CLOCK: [2015-08-21 Fri 10:49]--[2015-08-21 Fri 11:14] =>  0:25
-:END:
-:PROPERTIES:
-:ARCHIVE_TIME: 2015-08-24 Mon 10:16
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-
-* DONE Setup Jenkins build
-CLOSED: [2015-08-24 Mon 16:17]
-:PROPERTIES:
-:ARCHIVE_TIME: 2015-08-24 Mon 20:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-
-* DONE Fix failed tests
-CLOSED: [2015-08-24 Mon 16:17]
-:PROPERTIES:
-:ARCHIVE_TIME: 2015-08-24 Mon 20:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-
-* DELEGATED [#A] Configurable Insurance Questions                     :@work:
-SCHEDULED: <2015-08-27 Thu>
-:PROPERTIES:
-:Effort: 2day
-:ARCHIVE_TIME: 2015-08-26 Wed 09:57
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DELEGATED
-:END:
-This is delegated to ~CP~
-
-* DONE Add GAP in Page with Premium Options                           :@work:
-CLOSED: [2015-08-31 Mon 14:02] SCHEDULED: <2015-08-28 Fri>
-:PROPERTIES:
-:Effort: 4:00
-:ARCHIVE_TIME: 2015-08-31 Mon 14:07
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-Questions:
-Are you taking out this insurance at the commencement of your finance agreement?
-YesNo
-Do you have Comprehensive motor vehicle insurance?
-YesNo
-Will the vehicle be used for hire fare or reward or as a taxi, rental, loan or driving school vehicle motor sports, fast food delivery, emergency or law enforcement, transport of hazardous or inflammable goods or towing for income?
-YesNo
-
-* DONE Add premium summary page partial form for GAP [0/0]            :@work:
-CLOSED: [2015-08-31 Mon 16:22] SCHEDULED: <2015-08-31 Mon>
-:LOGBOOK:
-CLOCK: [2015-08-31 Mon 14:08]--[2015-08-31 Mon 14:33] =>  0:25
-:END:
+* DONE Payment Timing Migration
+CLOSED: [2015-10-27 Tue 13:09] SCHEDULED: <2015-10-27 Tue>
 :PROPERTIES:
 :Effort: 1:00
-:ARCHIVE_TIME: 2015-09-04 Fri 20:43
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_TIME: 2015-10-30 Fri 08:21
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination/MBFS
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination MBFS
 :END:
 
-* DONE Add payment methods for TOYOTA                                 :@work:
-CLOSED: [2015-09-03 Thu 17:32]
-:LOGBOOK:
-CLOCK: [2015-08-31 Mon 16:23]
-:END:
+* DONE [#A] Release Revised Payment Structure Code
+CLOSED: [2015-10-30 Fri 11:23]
 :PROPERTIES:
-:ARCHIVE_TIME: 2015-09-04 Fri 20:43
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
+:ARCHIVE_TIME: 2015-10-30 Fri 11:30
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination/NFS
 :ARCHIVE_CATEGORY: work
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination NFS
 :END:
-I think that this should be configurable
+- State "DONE"       from "TODO"       [2015-10-30 Fri 11:23]
+SCHEDULED: <2015-10-30 Fri>
 
-* DONE Add button to resync with origination                          :@work:
-CLOSED: [2015-09-07 Mon 17:12] SCHEDULED: <2015-09-07 Mon>
+* fm_origination
+
+** DONE JIRA: NFSNZRPOS-515                                 :fm_origination:
+CLOSED: [2015-10-30 Fri 14:21] SCHEDULED: <2015-10-30 Fri>
 :PROPERTIES:
-:Effort: 2:00
-:ARCHIVE_TIME: 2015-09-07 Mon 17:12
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-10-30 Fri 14:22
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination/NFS
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK NFS
+:END:
+- State "DONE"       from "STARTED"    [2015-10-30 Fri 14:21]
+:CLOCK:
+CLOCK: [2015-10-30 Fri 13:03]--[2015-10-30 Fri 14:21] =>  1:18
 :END:
 
-* DONE Separate Tabs into customer and histories
-CLOSED: [2015-09-10 Thu 11:14] SCHEDULED: <2015-09-10 Thu>
-:LOGBOOK:
-CLOCK: [2015-09-10 Thu 10:14]--[2015-09-10 Thu 10:39] =>  0:25
-:END:
+** DONE Modify Failed Controller Rspecs
+CLOSED: [2015-11-05 Thu 08:47]
 :PROPERTIES:
-:Effort: 2:00
-:ARCHIVE_TIME: 2015-09-11 Fri 13:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-05 Thu 08:47
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination
 :END:
+- State "DONE"       from "STARTED"    [2015-11-05 Thu 08:47]
+:CLOCK:
+CLOCK: [2015-10-30 Fri 12:00]--[2015-10-30 Fri 13:03] =>  1:03
+CLOCK: [2015-10-30 Fri 10:00]--[2015-10-30 Fri 11:32] =>  1:32
+:END:
+SCHEDULED: <2015-10-30 Fri>
+- [X] address_search_controller_spec.rb
+- [X] account_controller_spec.rb
+- [ ] addresses_controller_spec.rb
 
-* DONE Remove HTML5 date                                              :@work:
-CLOSED: [2015-09-10 Thu 22:47] SCHEDULED: <2015-09-10 Thu>
-:LOGBOOK:
-CLOCK: [2015-09-10 Thu 11:14]--[2015-09-10 Thu 11:39] =>  0:25
-:END:
+** DONE NFSNZRPOS-514                                       :fm_origination:
+CLOSED: [2015-11-06 Fri 11:22] SCHEDULED: <2015-11-06 Fri>
 :PROPERTIES:
-:Effort: 0:30
-:ARCHIVE_TIME: 2015-09-11 Fri 13:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-09 Mon 09:59
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK
 :END:
+- State "DONE"       from "TODO"       [2015-11-06 Fri 11:22]
 
-* DONE Synch policy number                                            :@work:
-CLOSED: [2015-09-10 Thu 10:13] SCHEDULED: <2015-09-10 Thu>
+** DONE Release NFS CR Issue to Test Server                           :work:
+CLOSED: [2015-11-06 Fri 11:22] SCHEDULED: <2015-11-05 Thu>
 :PROPERTIES:
-:Effort: 0:30
-:ARCHIVE_TIME: 2015-09-11 Fri 13:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-09 Mon 09:59
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination
 :END:
+- State "DONE"       from "TODO"       [2015-11-06 Fri 11:22]
 
-* DONE Origination JIRA Issuse                                        :@work:
-CLOSED: [2015-09-17 Thu 10:00] SCHEDULED: <2015-09-10 Thu>
-:LOGBOOK:
-CLOCK: [2015-09-11 Fri 13:37]
-:END:
+** DONE NFSNZRPOS-515                                       :fm_origination:
+CLOSED: [2015-11-09 Mon 09:59] SCHEDULED: <2015-11-06 Fri>
 :PROPERTIES:
-:Effort: 1:00
-:ARCHIVE_TIME: 2015-09-22 Tue 15:06
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-09 Mon 09:59
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK
 :END:
-[[mu4e:msgid:CAODn0wu%2Bb4K3ztOZk-cj1Ee8BzqaAf8cz8x02sQAF3Si9LMb4w@mail.gmail.com][Insurance/Prod Support Issues]]
+- State "DONE"       from "TODO"       [2015-11-09 Mon 09:59]
 
-- [X] CS-1638 :  Unable to Acknowledge Applications
-- [X] CS-1524 (MBFSCR-1526) : ClickSell - unable to copy application due to invalid ~area_code~
-- [X] CS-1640 (MBFSCR-1548) :  Customer Name and Contacts details do not transfer from Preliminary Screen To Customer Screen
-  1. Question, code would be fine?
-- [X] CS-1314 UI Bug
-  - [X] Firefox
-  - [X] IE9 - Win7
-  - [X] IE10 - Win 7
-  - [X] IE11 - Win 7
-  - [X] Chrome
-
-* DONE [#A] Talk to @Steve about JIRA ISSUE                           :@work:
-CLOSED: [2015-09-24 Thu 04:37] SCHEDULED: <2015-09-23 Wed>
-:LOGBOOK:
-CLOCK: [2015-09-23 Wed 09:53]--[2015-09-23 Wed 10:18] =>  0:25
-:END:
+** DONE Fix Originatioin Issues
+CLOSED: [2015-11-09 Mon 11:22] SCHEDULED: <2015-11-09 Mon>
 :PROPERTIES:
-:Effort: 0:30
-:ARCHIVE_TIME: 2015-09-24 Thu 04:37
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_OLPATH: Work Tasks
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-10 Tue 16:02
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination
 :END:
-JIRA issues : 463, 466, 471, 473 is related to finance product filter codes
-This could be changed based on product name.
+- State "DONE"       from "STARTED"    [2015-11-09 Mon 11:22]
+- [X] NFSNZRPOS-518
+- [X] NFSNZRPOS-519
+  maximumAmount == 0 || maximumPercentage == 0;
 
-#+begin_src html
-{{#financeProductConfiguration 'lct_applicable' ..}}
-#+end_src
-
-* DONE NFSNZRPOS-481                                               ::@Steve::
-CLOSED: [2015-09-30 Wed 11:14]
+** DONE Fix 1/3,1/3,1/3 issue                                         :work:
+CLOSED: [2015-11-16 Mon 09:54] SCHEDULED: <2015-11-10 Tue>
 :PROPERTIES:
-:ARCHIVE_TIME: 2015-09-30 Wed 11:15
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
+:ARCHIVE_TIME: 2015-11-16 Mon 09:54
+:ARCHIVE_FILE: ~/Dropbox/org/todo/work.org
+:ARCHIVE_OLPATH: fm_origination
+:ARCHIVE_CATEGORY: fm_origination
 :ARCHIVE_TODO: DONE
+:ARCHIVE_ITAGS: WORK fm_origination
 :END:
-Need @Steve's explanation
-
-* DONE NFSNZRPOS-475                                           :@work::Steve:
-CLOSED: [2015-10-05 Mon 12:47]
-:PROPERTIES:
-:ARCHIVE_TIME: 2015-10-06 Tue 09:20
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: DONE
-:END:
-Need to get ~production codes~ from Nissan
-At the moment, NFSNZ finance product's default codes are diffrent from files' name
-Use code in fm_admin
-
-* DONE NFSNZRPOS-470                                               ::@Steve::
-CLOSED: [2015-10-06 Tue 09:44]
-:PROPERTIES:
-:ARCHIVE_TIME: 2015-10-06 Tue 09:44
-:ARCHIVE_FILE: ~/Dropbox/org/work.org
-:ARCHIVE_CATEGORY: work
-:ARCHIVE_TODO: WAITING
-:END:
-Need @Steve's feedback & migration codes
+- State "DONE"       from "STARTED"    [2015-11-16 Mon 09:54]

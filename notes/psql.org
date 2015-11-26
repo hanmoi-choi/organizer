@@ -1,0 +1,5 @@
+* Postgres
+** Access remote server by using ssh tunnel
+#+begin_src sh
+ssh -fNg -L 5555:localhost:5432 {your_username}@{yourdomain.com}
+#+end_src

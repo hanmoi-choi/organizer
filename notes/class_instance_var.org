@@ -1,0 +1,39 @@
+* Class Instance Variables
+** Class instance variables are different from instance variables for the class
+*** At the codes below there are two @my_var and the scope is different one another.
+#+begin_src ruby
+class MyClass
+  @my_var = 1
+  def self.read; @my_var; end
+  def write; @my_var = 2; end
+  def read; @my_var; end
+end
+
+obj = MyClass.new
+obj.read # => nil
+obj.write
+obj.read # => 2
+MyClass.read # => 1
+#+end_src
+** Class Variables
+*** Class variables** don’t really belong to classes—they belong to class hierarchies.
+*** Because @@var is defined in the context of main, it belongs to main’s class Object and to all the descendants of Object.
+*** MyClass inherits from Object, so it ends up sharing the same class variable. As technically sound as this behavior is, it’s still likely to trip you.
+*** Because of unwelcome surprises like the one shown earlier, most Rubyists nowadays shun class variables in favor of Class Instance Variables.
+
+#+begin_src ruby
+class C
+  @@v = 1 # @@v is belong to Object class and its decendants
+end
+
+class D < C
+  def my_method; @@v; end
+end
+D.new.my_method # => 1
+
+@@v = 1
+class MyClass
+  @@v = 2
+end
+@@v #=>2
+#+end_src

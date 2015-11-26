@@ -1,0 +1,84 @@
+* GIT Study
+** Basic
+*** Create Bare Repo
+Config file
+[core]
+bare=true
+#+begin_src sh
+ git init --bare # this directory is treated as .git dir
+#+end_src
+
+*** Clone
+Zipped and hashed object are saved in .git/objects
+Default remote name is 'Origin
+#+begin_src sh
+  git clone <Server URL> # serveral protocol is supported e.g file, https, ssh
+  e.g git clone d:dev/dummy-git-server
+#+end_src
+
+*** Initial Push
+Default Remote name is 'origin'
+#+begin_src sh
+  git remate add <Remote Name> <Server URL>
+  git push --set-upstream origin master
+#+end_src
+
+*** Object Types
+1. cat-file
+   1. -p --pretty
+   2. -s --size
+   3. -t --type
+**** Blob
+Zipped files
+
+**** Tree
+**** Commit
+#+begin_src sh
+  git remate add <Remote Name> <Server URL>
+  git push --set-upstream origin master
+#+end_src
+
+*** Object Types
+**** Command to inspect
+1. cat-file
+   1. -p --pretty
+   2. -s --size
+   3. -t --type
+2. ls-tree
+   1. -r # recursive
+3. for-each-ref
+
+**** Blob
+Zipped files
+
+**** Tree
+
+**** Commit
+git cat-file -p <HASH>
+tree 5f6acbd14a2b870d5dfdf5acc4d893a31acd168d
+parent 6c62f94ae322aa847a3aae20588f96821389d7e7
+author Hanmoi Choi <forhim185@gmail.com> 1448139380 -0800
+committer Hanmoi Choi <forhim185@gmail.com> 1448139380 -0800
+
+**** Tags
+Almost same as Commit but immutable
+
+*** File Structre
+**** Save Objects
+location is '.git/objects'
+file is zipped and hashed
+Git does not care file name but content to save.
+
+**** Branch
+location is '.git/refs'
+- remote '.git/refs/<Remote Name>/<Branch Name>'
+- local '.git/heads/<Branch Name>'
+- Branch is saving hash# for commit object
+
+**** Special Files
+1. HEAD
+ref: <Branch Location> e.g. ref: ref/heads/mater
+use rev-parse to get <HASH>
+
+2. COMMIT_EDITMSG
+last commit MSG

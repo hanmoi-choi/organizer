@@ -1,0 +1,9 @@
+#+FILETAGS: REFILE
+* TODO Setup Org-Mode newly
+[2015-11-20 Fri 18:38]
+* TODO Fix JIRA bug
+[2015-11-25 Wed 17:26]
+2. In DEV RCM module, few background jobs are failing. Being investigated by Daniel
+    -  RecalculateContractBalances -
+    -  Reporting::PopulateDailyFacilitiesReport –
+    -  Reporting::PopulateGlPostings –

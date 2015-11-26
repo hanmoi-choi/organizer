@@ -1,0 +1,61 @@
+* Ruby Scope
+** Scope Gates
+*** Class definitions
+*** Module definitions
+*** Methods
+*** The code in a class or module definition is executed immediately.
+*** Conversely, the code in a method definition is executed later, when you eventually call the method.
+
+** Ruby does not allow inner scope to access to outer scope
+#+begin_src ruby
+v1 = 1
+class MyClass   # SCOPE GATE: entering class
+    v2 = 2
+    local_variables # => ["v2"]
+    def my_method   # SCOPE GATE: entering def
+        v3 = 3
+        local_variables    # => [:v3]
+    end             # SCOPE GATE: leaving class
+    local_variables # => ["v2"]
+end
+
+obj = MyClass.new
+obj.my_method
+local_variables     # => [:v1, :obj]
+#+end_src
+
+** Flattening the Scope, ~using Class.new~
+#+begin_src ruby
+my_var = "Success"
+MyClass = Class.new do
+  #Now we can print my_var here...
+  puts "#{my_var} in the class definition!"
+  def my_method
+    # ...but how can we print it here?
+  end
+
+  # use define_method
+  define_method :my_method do
+    puts "#{my_var} in the method"
+  end
+end
+#+end_src
+
+** Sharing Scope
+#+begin_src ruby
+def define_methods
+  shared = 0
+  Kernel.send :define_method, :counter do
+    shared
+  end
+
+  Kernel.send :define_method, :inc do |x|
+    shared += x
+  end
+end
+
+define_methods
+counter # =0
+inc(4)
+counter # =4
+#+end_src

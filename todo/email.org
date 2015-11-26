@@ -1,0 +1,3 @@
+#+FILETAGS: EMAIL
+* Inbox
+** MBFS VPN, Link: [[gnus:nnimap%2Bwork:INBOX#CAJb50vcFz1%2BH6536DbHQY9c%3DB3QOYNCKBqAd9To_UTLhyurpYg@mail.gmail.com][Email from Tim Gabric: Re: MBFS VPN]]

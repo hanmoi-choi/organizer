@@ -1,0 +1,24 @@
+* tar
+** create tar
+#+begin_src sh
+tar --create --preserve-permissions --verbose --file archive.tar archive/
+tar cpvf archive.tar archive/
+#+end_src
+
+** extract tar
+#+begin_src sh
+tar --extract --verbose --file archive.tar
+tar xvf archive.tar
+#+end_src
+
+** create tar.gz
+#+begin_src sh
+tar --create --gzip --preserve-permissions --verbose --file archive.tar.gz archive/
+tar czpvf archive.tar.gz archive/
+#+end_src
+
+** extract tar.gz
+#+begin_src sh
+tar --extract --verbose --file archive.tar
+tar xvf archive.tar
+#+end_src
