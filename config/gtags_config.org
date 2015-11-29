@@ -1,5 +1,58 @@
 * Tagging
-** Global & GTags
+** Ctags
+#+begin_src sh :noweb yes :tangle ~/.ctags :export none
+  --regex-ruby=/(^|[:;])[ \t]*([A-Z][[:alnum:]_]+) *=/\2/c,class,constant/
+  --regex-ruby=/(^|;)[ \t]*(has_many|belongs_to|has_one|has_and_belongs_to_many)\(? *:([[:alnum:]_]+)/\3/f,function,association/
+  --regex-ruby=/(^|;)[ \t]*(named_)?scope\(? *:([[:alnum:]_]+)/\3/f,function,named_scope/
+  --regex-ruby=/(^|;)[ \t]*expose\(? *:([[:alnum:]_]+)/\2/f,function,exposure/
+  --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2/f,function,aasm_event/
+  --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2!/f,function,aasm_event/
+  --regex-ruby=/(^|;)[ \t]*event\(? *:([[:alnum:]_]+)/\2?/f,function,aasm_event/
+
+  --regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\{/\1/,object/
+  --regex-JavaScript=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*function[ \t]*\(/\1/,function/
+  --regex-JavaScript=/([A-Za-z0-9._$()]+)[ \t]*[:=][ \t]*\(function[ \t]*\(\)/\1/,function/
+  --regex-JavaScript=/function[ \t]+([A-Za-z0-9._$]+)[ \t]*\(([^)])\)/\1/,function/
+  --regex-JavaScript=/([A-Za-z0-9._$]+)[ \t]*[:=][ \t]*\[/\1/,array/
+  --regex-JavaScript=/([^= ]+)[ \t]*=[ \t]*[^"]'[^']*/\1/,string/
+  --regex-JavaScript=/Handlebars\.registerHelper\(['"]([A-Za-z0-9._$]+)['"]/\1/,string/
+  --regex-JavaScript=/[A-Za-z0-9._$]+\.factory\(['"]([A-Za-z0-9._$]+)['"]/\1/,string/
+  --regex-JavaScript=/[A-Za-z0-9._$]+\.service\(['"]([A-Za-z0-9._$]+)['"]/\1/,string/
+  --regex-JavaScript=/var\s+([A-Za-z0-9._$]+)\s+=\s+_.bind\(/\1/,string/
+  --regex-JavaScript=/var\s+([A-Za-z0-9._$]+)\s+=\s+\(\s+function\s+\(\)/\1/,variable/
+  --regex-JavaScript=/var\s+([A-Za-z0-9._$]+)\s+=/\1/,variable/
+
+  --langdef=coffee
+  --langmap=coffee:.coffee
+  --regex-coffee=/^[ \t]*([A-Za-z.]+)[ \t]+=.*->.*$/\1/f,function/
+  --regex-coffee=/^[ \t]*([A-Za-z.]+)[ \t]+=[^->\n]*$/\1/v,variable/
+  --regex-coffee=/^[ \t]*((class ){1}[A-Za-z.]+)[ \t]+=[^->\n]*$/\1/v,object/
+
+  --exclude=jquery.js
+  --exclude=angular.js
+  --exclude=angular-resource.js
+  --exclude=jquery.ui.js
+  --exclude=jquery.ui.tabs.js
+  --exclude=jquery.ui.widget.js
+  --exclude=modernizr.js
+  --exclude=custom.modernizr.js
+  --exclude=underscore-min.js
+  --exclude=underscore.js
+  --exclude=nwmatcher-1.2.5-min.js
+  --exclude=rem.js
+  --exclude=jsmock.js
+  --exclude=*.min.js
+  --exclude=window_min.js
+  --exclude=jquery-1.9.1-min.js
+  --exclude=jquery-1.9.1.js
+  --exclude=underscore.string.js
+  --exclude=json2.js
+  --exclude=datepicker.js
+  --exclude=datepicker.packed.js
+  --exclude=query.datetimepicker.js
+#+end_src
+
+** Global
 #+begin_src sh :noweb yes :tangle ~/.globalrc :export none
   default:\
     :tc=exuberant-ctags:tc=htags:

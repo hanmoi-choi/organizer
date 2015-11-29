@@ -1,0 +1,6 @@
+#+FILETAGS: PRIVATE
+* Emacs
+* Errand
+* Church
+* Study
+* Family

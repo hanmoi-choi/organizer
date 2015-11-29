@@ -47,7 +47,7 @@ Emacs complaining about setting PATH and MANPATH at ~.zshrc~
 
 ** EDITOR
 #+begin_src sh :noweb yes :tangle ~/.zshrc :export none
-export EDITOR=vim
+  export EDITOR=vim
 #+end_src
 
 ** SSH
@@ -269,6 +269,8 @@ export EDITOR=vim
   alias lou="lsof -n -i4UDP:"
   alias be="bundle exec"
   alias ber="bundle exec rake"
+
+  alias psa="ps aux"
 
   alias for_tfa="DEPLOYMENT_CLIENT=tfa"
   alias for_mbfs="DEPLOYMENT_CLIENT=mbfs"
